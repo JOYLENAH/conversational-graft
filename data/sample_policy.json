@@ -1,0 +1,85 @@
+{
+  "_note": "SYNTHETIC placeholder policy for building and testing the system. Replace or extend with real policy data later; the loader reads the same schema.",
+  "policy_id": "CHP-001",
+  "name": "Sample Child Health Plan",
+  "age_rules": [
+    {
+      "id": "AR1",
+      "clause_id": "C1",
+      "min_age": 0,
+      "max_age": 17,
+      "text": "Children from birth up to and including age 17 are eligible for cover as dependents of the principal member."
+    },
+    {
+      "id": "AR2",
+      "clause_id": "C2",
+      "min_age": 18,
+      "max_age": 24,
+      "text": "Dependents aged 18 to 24 remain eligible only if they are full-time students and financially dependent on the principal member."
+    }
+  ],
+  "benefits": [
+    {
+      "id": "B1",
+      "name": "Inpatient care",
+      "keywords": ["inpatient", "hospital", "admission", "admitted"],
+      "clause_id": "C3",
+      "text": "Inpatient care covers hospital admission, surgery and specialist fees up to the annual inpatient limit."
+    },
+    {
+      "id": "B2",
+      "name": "Maternity and newborn care",
+      "keywords": ["newborn", "maternity", "birth"],
+      "clause_id": "C4",
+      "text": "Newborn care is covered from birth if the baby is registered within 30 days."
+    },
+    {
+      "id": "B3",
+      "name": "Dental care",
+      "keywords": ["dental", "dentist", "tooth", "teeth"],
+      "clause_id": "C5",
+      "text": "Dental care covers check-ups, fillings and extractions up to the annual dental limit."
+    },
+    {
+      "id": "B4",
+      "name": "Optical care",
+      "keywords": ["optical", "glasses", "eye", "eyes", "spectacles"],
+      "clause_id": "C6",
+      "text": "Optical care covers eye tests and one pair of spectacles per policy year."
+    }
+  ],
+  "waiting_periods": [
+    {
+      "benefit_id": "B1",
+      "clause_id": "C7",
+      "days": 30,
+      "text": "A 30-day waiting period applies to inpatient care for new members."
+    },
+    {
+      "benefit_id": "B3",
+      "clause_id": "C8",
+      "days": 90,
+      "text": "A 90-day waiting period applies to dental care."
+    },
+    {
+      "benefit_id": "B4",
+      "clause_id": "C9",
+      "days": 90,
+      "text": "A 90-day waiting period applies to optical care."
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "E1",
+      "benefit_id": "B3",
+      "clause_id": "C10",
+      "text": "Cosmetic dental procedures, including teeth whitening and veneers, are excluded."
+    },
+    {
+      "id": "E2",
+      "benefit_id": "B1",
+      "clause_id": "C11",
+      "text": "Treatment arising from pre-existing conditions is excluded during the first 12 months of cover."
+    }
+  ]
+}
