@@ -27,19 +27,55 @@ Grounded answer + policy citation + faithfulness / retention score
 | `graft/metrics.py` | Faithfulness and constraint-retention proxies |
 | `api/` | FastAPI `/chat` endpoint |
 | `data/` | Policy data (sample file is synthetic; real policies use the same schema) |
-| `training/` | RAFT dataset + fine-tuning (W3) |
-| `evaluation/` | Baseline vs RAG vs GRAFT comparison (W5) |
-| `ui/` | Multi-turn chat interface (W6) |
+| `tests/` | Automated tests (memory, grounding, API sessions) |
+| `training/` | RAFT dataset + fine-tuning (planned, W3) |
+| `evaluation/` | Baseline vs RAG vs GRAFT comparison (planned, W5) |
+| `ui/` | Multi-turn chat interface (planned, W6) |
 
-## Run
+## Setup and run (Windows, VS Code)
 
-```bash
+Requires Python 3.10 or newer. Open the project folder (the one containing
+`requirements.txt`) in VS Code, open a terminal with Ctrl + `, then:
+
+```powershell
+# 1. Create and activate a virtual environment
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+
+# 2. Install dependencies
 pip install -r requirements.txt
+
+# 3. Run the tests (expect: 7 passed)
 pytest
+
+# 4. Start the server
 uvicorn api.main:app --reload
 ```
 
-Then `POST /chat` with `{"session_id": "demo", "message": "My son is 9 years old. Is dental covered?"}`.
+If PowerShell blocks the activate script, run this once in the same terminal and retry:
+
+```powershell
+Set-ExecutionPolicy -Scope Process RemoteSigned
+```
+
+Each new terminal needs step 1's `.venv\Scripts\Activate.ps1` again (the prompt
+should start with `(.venv)`).
+
+## Try it
+
+1. With the server running, open <http://127.0.0.1:8000/health>. It should return `{"status":"ok", ...}`.
+2. Open <http://127.0.0.1:8000/docs>, click **POST /chat**, then **Try it out**.
+3. Send messages using the same `session_id` so the memory carries across turns:
+
+```json
+{"session_id": "demo", "message": "My daughter is 20 and a full-time student"}
+{"session_id": "demo", "message": "Is dental covered?"}
+{"session_id": "demo", "message": "And the waiting period?"}
+```
+
+Each response contains the `answer`, the policy `citations`, the `memory_state`,
+and the `scores` (faithfulness, constraint retention, latency). Stop the server
+with Ctrl + C.
 
 ## Roadmap
 
