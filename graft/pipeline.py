@@ -26,6 +26,7 @@ class GraftPipeline:
         self.graph = graph
         self.index = index or ClauseIndex.from_graph(graph)
         self.llm = llm or RuleBasedLLM()
+        self.clause_text = {c.clause_id: c.text for c in self.index.clauses}
 
     @classmethod
     def from_policy_file(cls, path: str | Path = DEFAULT_POLICY, llm: Optional[LLM] = None) -> "GraftPipeline":
@@ -76,13 +77,27 @@ class GraftPipeline:
         conversation = " ".join(t["text"] for t in state.turns if t["role"] == "user")
         evidence = [f.text for f in facts] + [c.text for c in clauses] + [conversation]
         latency_ms = (time.perf_counter() - start) * 1000
+
+        # Evidence for the UI: clauses the answer cites, then clauses retrieval
+        # returned that the answer did not use (the "distractors" the model must ignore).
+        faith = faithfulness(answer, evidence)
+        retention = constraint_retention(answer, state.to_dict())
+        evidence_items = [
+            {"clause_id": cid, "text": self.clause_text.get(cid, ""), "used": True} for cid in citations
+        ]
+        evidence_items += [
+            {"clause_id": c.clause_id, "text": c.text, "used": False}
+            for c in clauses
+            if c.clause_id not in citations
+        ]
         return {
             "answer": answer,
             "citations": citations,
+            "evidence": evidence_items,
             "memory_state": state.to_dict(),
             "scores": {
-                "faithfulness": round(faithfulness(answer, evidence), 3),
-                "constraint_retention": round(constraint_retention(answer, state.to_dict()), 3),
+                "faithfulness": None if faith is None else round(faith, 3),
+                "constraint_retention": None if retention is None else round(retention, 3),
                 "latency_ms": round(latency_ms, 2),
             },
         }

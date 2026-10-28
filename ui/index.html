@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conversational GRAFT</title>
+<link rel="icon" href="data:,">
+<style>
+  :root {
+    --page: #edf1f2;
+    --paper: #ffffff;
+    --ink: #14232b;
+    --muted: #586a73;
+    --rule: #d3dce0;
+    --teal: #0d6b63;
+    --teal-soft: #dcefec;
+    --amber: #f0b429;
+    --amber-soft: #fff1c9;
+    --alert: #a63a2b;
+    --alert-soft: #fbe9e5;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.45;
+  }
+  button, textarea { font: inherit; color: inherit; }
+  :focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; }
+
+  .app {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    padding: 16px 20px 20px;
+    gap: 14px;
+  }
+
+  /* ---------- header ---------- */
+  .top { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+  .brand { font-family: var(--serif); font-size: 22px; font-weight: 700; margin: 0; letter-spacing: -0.01em; }
+  .tagline { color: var(--muted); margin: 0; }
+  .top-right { margin-left: auto; display: flex; align-items: center; gap: 14px; }
+  .policy-name { color: var(--muted); font-size: 13px; }
+  .btn {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    border-radius: 8px;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .btn:hover { border-color: var(--teal); }
+
+  /* ---------- layout ---------- */
+  .main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 380px;
+    gap: 16px;
+    min-height: 0;
+  }
+  .panel {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    min-height: 0;
+  }
+  .panel-title { margin: 0; font-size: 15px; font-weight: 650; }
+  .panel-note { margin: 2px 0 0; font-size: 12.5px; color: var(--muted); }
+  .panel-head { padding: 12px 16px 10px; border-bottom: 1px solid var(--rule); }
+
+  /* ---------- chat ---------- */
+  .chat { display: flex; flex-direction: column; }
+  .log { flex: 1; overflow-y: auto; padding: 18px 20px; display: flex; flex-direction: column; gap: 14px; }
+  .msg { max-width: 86%; }
+  .msg-user {
+    align-self: flex-end;
+    background: var(--teal);
+    color: #fff;
+    padding: 9px 14px;
+    border-radius: 14px 14px 3px 14px;
+  }
+  .msg-bot {
+    align-self: flex-start;
+    font-family: var(--serif);
+    font-size: 16.5px;
+    line-height: 1.55;
+    padding: 2px 0 2px 14px;
+    border-left: 3px solid var(--teal);
+  }
+  .msg-error {
+    align-self: flex-start;
+    background: var(--alert-soft);
+    color: var(--alert);
+    border-radius: 10px;
+    padding: 9px 14px;
+  }
+  .msg-wait { color: var(--muted); font-style: italic; font-family: var(--serif); padding-left: 14px; }
+
+  .cite {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 650;
+    color: var(--teal);
+    background: var(--teal-soft);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0 6px;
+    margin: 0 1px;
+    cursor: pointer;
+    vertical-align: 1px;
+  }
+  .cite:hover { border-color: var(--teal); }
+
+  .starter { margin: auto 0; max-width: 560px; align-self: center; text-align: left; }
+  .starter h2 { font-family: var(--serif); font-size: 24px; margin: 0 0 6px; }
+  .starter p { margin: 0 0 14px; color: var(--muted); }
+  .starter ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .prompt {
+    width: 100%;
+    text-align: left;
+    background: var(--page);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+  .prompt:hover { border-color: var(--teal); background: var(--teal-soft); }
+
+  .composer { display: flex; gap: 10px; padding: 12px 16px; border-top: 1px solid var(--rule); }
+  .composer textarea {
+    flex: 1;
+    resize: none;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 10px 12px;
+    height: 44px;
+    background: var(--paper);
+  }
+  .composer .send {
+    background: var(--teal);
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    padding: 0 22px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .composer .send:disabled { opacity: 0.5; cursor: default; }
+
+  /* ---------- side column ---------- */
+  .side { display: flex; flex-direction: column; gap: 12px; min-height: 0; }
+  .side .panel { flex: none; }
+  .side .evidence { flex: 1 1 auto; display: flex; flex-direction: column; min-height: 120px; }
+
+  .memory-list { margin: 0; padding: 6px 16px 10px; }
+  .memory-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    padding: 3px 8px;
+    margin: 0 -8px;
+    border-radius: 6px;
+  }
+  .memory-row dt { color: var(--muted); }
+  .memory-row dd { margin: 0; font-weight: 600; text-align: right; }
+  .memory-row dd.empty { color: var(--muted); font-weight: 400; font-style: italic; }
+  .memory-row.changed { background: var(--amber-soft); animation: settle 2.2s ease-out forwards; }
+  .memory-row.changed dt::after { content: " (updated)"; color: var(--muted); font-size: 12px; }
+  @keyframes settle { from { background: var(--amber); } to { background: var(--amber-soft); } }
+
+  .evidence-list { overflow-y: auto; padding: 10px 16px 14px; display: grid; gap: 10px; align-content: start; }
+  .clause {
+    border-left: 3px solid var(--rule);
+    padding: 2px 0 2px 12px;
+  }
+  .clause.used { border-left-color: var(--teal); }
+  .clause.flash { animation: flash 1.4s ease-out; }
+  @keyframes flash { from { background: var(--amber); } to { background: transparent; } }
+  .clause-head { display: flex; gap: 8px; align-items: baseline; font-size: 12.5px; color: var(--muted); }
+  .clause-id { font-weight: 700; color: var(--ink); }
+  .clause.used .clause-id { color: var(--teal); }
+  .clause-text { font-family: var(--serif); font-size: 14.5px; margin: 2px 0 0; }
+  .clause:not(.used) .clause-text { color: var(--muted); }
+  .empty-note { padding: 12px 16px; color: var(--muted); margin: 0; }
+
+  .quality { border-top: 1px solid var(--rule); padding: 10px 20px 12px; }
+  .quality-title { margin: 0 0 6px; font-size: 13px; font-weight: 650; }
+  .quality-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .quality-grid .empty-note { grid-column: 1 / -1; padding: 0; }
+  .score-line { display: flex; justify-content: space-between; align-items: baseline; }
+  .score-name { font-weight: 600; }
+  .score-value { font-variant-numeric: tabular-nums; font-weight: 650; }
+  .bar { height: 6px; background: var(--page); border-radius: 3px; margin: 4px 0 3px; overflow: hidden; }
+  .bar > span { display: block; height: 100%; width: 0; background: var(--teal); border-radius: 3px; transition: width 0.4s ease; }
+  .bar.warn > span { background: var(--amber); }
+  .bar.bad > span { background: var(--alert); }
+  .score-help { font-size: 12px; color: var(--muted); margin: 0; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .memory-row.changed { animation: none; }
+    .clause.flash { animation: none; background: var(--amber-soft); }
+    .bar > span { transition: none; }
+  }
+
+  /* ---------- narrow screens ---------- */
+  @media (max-width: 900px) {
+    html, body { height: auto; }
+    .app { height: auto; padding: 12px 16px 16px; }
+    .main { grid-template-columns: 1fr; }
+    .chat { height: 80vh; }
+    .side .evidence { max-height: 360px; }
+    .msg { max-width: 92%; }
+    .quality-grid { grid-template-columns: 1fr; gap: 8px; }
+    .score-help { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <h1 class="brand">Conversational GRAFT</h1>
+    <p class="tagline">Child health insurance advisor</p>
+    <div class="top-right">
+      <span class="policy-name" id="policyName"></span>
+      <button class="btn" id="newChat" type="button">New conversation</button>
+    </div>
+  </header>
+
+  <div class="main">
+    <section class="panel chat" aria-label="Conversation">
+      <div class="log" id="log" role="log" aria-live="polite"></div>
+      <section class="quality" aria-labelledby="scoreTitle">
+        <h2 class="quality-title" id="scoreTitle">Quality checks on the latest answer</h2>
+        <div class="quality-grid" id="scores"></div>
+      </section>
+      <form class="composer" id="composer">
+        <textarea id="input" rows="1" aria-label="Your message" placeholder="Ask about cover for your child"></textarea>
+        <button class="send" id="send" type="submit">Send</button>
+      </form>
+    </section>
+
+    <aside class="side" aria-label="How the answer was made">
+      <section class="panel" aria-labelledby="memTitle">
+        <div class="panel-head">
+          <h2 class="panel-title" id="memTitle">What the system remembers</h2>
+          <p class="panel-note">Kept from earlier messages, used on every answer.</p>
+        </div>
+        <dl class="memory-list" id="memory"></dl>
+      </section>
+
+      <section class="panel evidence" aria-labelledby="evTitle">
+        <div class="panel-head">
+          <h2 class="panel-title" id="evTitle">Policy evidence</h2>
+          <p class="panel-note">Select a citation in the chat to find its clause.</p>
+        </div>
+        <div class="evidence-list" id="evidence"></div>
+      </section>
+    </aside>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var STARTERS = [
+    "My daughter is 20 and a full-time student",
+    "Is dental covered?",
+    "And the waiting period?"
+  ];
+
+  var MEMORY_FIELDS = [
+    { key: "age", label: "Child's age", format: function (v) { return v === null || v === undefined ? null : v + " years"; } },
+    { key: "is_dependent", label: "Is a dependent", format: function (v) { return v ? "Yes" : null; } },
+    { key: "is_student", label: "Full-time student", format: function (v) { return v ? "Yes" : null; } },
+    { key: "benefits_discussed", label: "Benefits discussed", format: function (v) { return v && v.length ? v.join(", ") : null; } },
+    { key: "turn_count", label: "Messages you've sent", format: function (v) { return v ? String(v) : null; } }
+  ];
+
+  var log = document.getElementById("log");
+  var form = document.getElementById("composer");
+  var input = document.getElementById("input");
+  var sendBtn = document.getElementById("send");
+  var memoryEl = document.getElementById("memory");
+  var evidenceEl = document.getElementById("evidence");
+  var scoresEl = document.getElementById("scores");
+
+  var sessionId = newSessionId();
+  var previousMemory = {};
+  var busy = false;
+
+  function newSessionId() {
+    try { if (window.crypto && crypto.randomUUID) return crypto.randomUUID(); } catch (e) {}
+    return "s-" + Date.now() + "-" + Math.random().toString(16).slice(2);
+  }
+
+  function el(tag, className, text) {
+    var node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  }
+
+  /* ---------- conversation ---------- */
+  function showStarter() {
+    var wrap = el("div", "starter");
+    wrap.id = "starter";
+    wrap.appendChild(el("h2", null, "Try a conversation"));
+    wrap.appendChild(el("p", null, "Tell the system about your child, then ask follow-up questions. It keeps what you say and answers from the policy. These three messages work well in order."));
+    var list = el("ol");
+    STARTERS.forEach(function (text) {
+      var li = el("li");
+      var b = el("button", "prompt", text);
+      b.type = "button";
+      b.addEventListener("click", function () { send(text); });
+      li.appendChild(b);
+      list.appendChild(li);
+    });
+    wrap.appendChild(list);
+    log.appendChild(wrap);
+  }
+
+  function clearStarter() {
+    var s = document.getElementById("starter");
+    if (s) s.remove();
+  }
+
+  function addUser(text) {
+    log.appendChild(el("div", "msg msg-user", text));
+    scrollLog();
+  }
+
+  function addBot(text) {
+    var box = el("div", "msg msg-bot");
+    // Turn [C8] style citations into buttons that jump to the clause.
+    var parts = text.split(/(\[C\d+\])/g);
+    parts.forEach(function (part) {
+      var m = part.match(/^\[(C\d+)\]$/);
+      if (m) {
+        var b = el("button", "cite", m[1]);
+        b.type = "button";
+        b.setAttribute("aria-label", "Show clause " + m[1]);
+        b.addEventListener("click", function () { focusClause(m[1]); });
+        box.appendChild(b);
+      } else if (part) {
+        box.appendChild(document.createTextNode(part));
+      }
+    });
+    log.appendChild(box);
+    scrollLog();
+  }
+
+  function addError(text) {
+    log.appendChild(el("div", "msg msg-error", text));
+    scrollLog();
+  }
+
+  function scrollLog() { log.scrollTop = log.scrollHeight; }
+
+  function setBusy(state) {
+    busy = state;
+    sendBtn.disabled = state;
+    input.disabled = state;
+    if (!state) input.focus();
+  }
+
+  async function send(text) {
+    text = (text || "").trim();
+    if (!text || busy) return;
+    clearStarter();
+    addUser(text);
+    input.value = "";
+    setBusy(true);
+    var waiting = el("div", "msg msg-wait", "Checking the policy");
+    log.appendChild(waiting);
+    scrollLog();
+    try {
+      var res = await fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ session_id: sessionId, message: text })
+      });
+      if (!res.ok) throw new Error("Server returned " + res.status);
+      var data = await res.json();
+      waiting.remove();
+      addBot(data.answer);
+      renderMemory(data.memory_state);
+      renderEvidence(data.evidence || []);
+      renderScores(data.scores);
+    } catch (err) {
+      waiting.remove();
+      addError("Can't reach the server. Start it with \"uvicorn api.main:app --reload\" in the project folder, then send your message again.");
+    }
+    setBusy(false);
+  }
+
+  /* ---------- side panels ---------- */
+  function renderMemory(state) {
+    state = state || {};
+    memoryEl.textContent = "";
+    MEMORY_FIELDS.forEach(function (f) {
+      var shown = f.format(state[f.key]);
+      var before = f.format(previousMemory[f.key]);
+      var row = el("div", "memory-row");
+      row.appendChild(el("dt", null, f.label));
+      var dd = el("dd", shown === null ? "empty" : null, shown === null ? "Not known yet" : shown);
+      row.appendChild(dd);
+      // Highlight anything learned or changed by the latest message (not the message counter).
+      if (f.key !== "turn_count" && shown !== null && shown !== before) row.classList.add("changed");
+      memoryEl.appendChild(row);
+    });
+    previousMemory = JSON.parse(JSON.stringify(state));
+  }
+
+  function renderEvidence(items) {
+    evidenceEl.textContent = "";
+    if (!items.length) {
+      evidenceEl.appendChild(el("p", "empty-note", "No policy clause matched this message. The system says so instead of guessing."));
+      return;
+    }
+    items.forEach(function (item) {
+      var box = el("div", "clause" + (item.used ? " used" : ""));
+      box.dataset.clause = item.clause_id;
+      var head = el("div", "clause-head");
+      head.appendChild(el("span", "clause-id", item.clause_id));
+      head.appendChild(el("span", null, item.used ? "Used in the answer" : "Retrieved, not used"));
+      box.appendChild(head);
+      box.appendChild(el("p", "clause-text", item.text));
+      evidenceEl.appendChild(box);
+    });
+  }
+
+  function focusClause(id) {
+    var target = evidenceEl.querySelector('[data-clause="' + id + '"]');
+    if (!target) return;
+    target.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    target.classList.remove("flash");
+    void target.offsetWidth; // restart the animation
+    target.classList.add("flash");
+  }
+
+  function scoreRow(name, valueText, fraction, help) {
+    var row = el("div", "score");
+    var line = el("div", "score-line");
+    line.appendChild(el("span", "score-name", name));
+    line.appendChild(el("span", "score-value", valueText));
+    row.appendChild(line);
+    if (fraction !== null && fraction !== undefined) {
+      var bar = el("div", "bar" + (fraction < 0.7 ? " bad" : fraction < 1 ? " warn" : ""));
+      bar.setAttribute("role", "progressbar");
+      bar.setAttribute("aria-valuemin", "0");
+      bar.setAttribute("aria-valuemax", "100");
+      bar.setAttribute("aria-valuenow", String(Math.round(fraction * 100)));
+      bar.setAttribute("aria-label", name);
+      var fill = el("span");
+      bar.appendChild(fill);
+      row.appendChild(bar);
+      requestAnimationFrame(function () { fill.style.width = Math.round(fraction * 100) + "%"; });
+    }
+    row.appendChild(el("p", "score-help", help));
+    return row;
+  }
+
+  function renderScores(s) {
+    scoresEl.textContent = "";
+    if (!s) return;
+    var f = s.faithfulness, r = s.constraint_retention;
+    scoresEl.appendChild(scoreRow("Faithfulness",
+      f === null ? "Not applicable" : Math.round(f * 100) + "%", f,
+      f === null ? "This answer states no figures, so there is nothing to check."
+                 : "Share of figures in the answer found in the policy or your message."));
+    scoresEl.appendChild(scoreRow("Constraint retention",
+      r === null ? "Not applicable" : Math.round(r * 100) + "%", r,
+      r === null ? "Nothing has been remembered yet, so there is nothing to retain."
+                 : "Whether remembered details, such as the age, show up in the answer."));
+    scoresEl.appendChild(scoreRow("Response time", Math.round(s.latency_ms) + " ms", null,
+      "Time to retrieve, check and compose the answer."));
+  }
+
+  function resetPanels() {
+    previousMemory = {};
+    renderMemory({});
+    evidenceEl.textContent = "";
+    evidenceEl.appendChild(el("p", "empty-note", "Policy clauses behind each answer appear here."));
+    scoresEl.textContent = "";
+    scoresEl.appendChild(el("p", "empty-note", "Scores appear after the first answer."));
+  }
+
+  /* ---------- wiring ---------- */
+  form.addEventListener("submit", function (e) { e.preventDefault(); send(input.value); });
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(input.value); }
+  });
+
+  document.getElementById("newChat").addEventListener("click", function () {
+    var old = sessionId;
+    sessionId = newSessionId();
+    fetch("/session/" + encodeURIComponent(old), { method: "DELETE" }).catch(function () {});
+    log.textContent = "";
+    resetPanels();
+    showStarter();
+    input.focus();
+  });
+
+  fetch("/health").then(function (r) { return r.json(); }).then(function (h) {
+    document.getElementById("policyName").textContent = "Policy: " + h.policy;
+  }).catch(function () {});
+
+  resetPanels();
+  showStarter();
+  input.focus();
+})();
+</script>
+</body>
+</html>

@@ -30,7 +30,7 @@ Grounded answer + policy citation + faithfulness / retention score
 | `tests/` | Automated tests (memory, grounding, API sessions) |
 | `training/` | RAFT dataset + fine-tuning (planned, W3) |
 | `evaluation/` | Baseline vs RAG vs GRAFT comparison (planned, W5) |
-| `ui/` | Multi-turn chat interface (planned, W6) |
+| `ui/` | Multi-turn chat interface (the prototype), served at `/` |
 
 ## Setup and run (Windows, VS Code)
 
@@ -63,7 +63,16 @@ should start with `(.venv)`).
 
 ## Try it
 
-1. With the server running, open <http://127.0.0.1:8000/health>. It should return `{"status":"ok", ...}`.
+**Chat interface (the prototype).** With the server running, open
+<http://127.0.0.1:8000>. It shows the conversation, a live panel of what the system
+remembers, the policy clauses behind each answer (clauses the answer used, and
+clauses retrieved but ignored), and quality checks on the latest answer.
+Select a citation such as `C8` in an answer to jump to its clause. Use
+**New conversation** to reset the memory.
+
+**API testing page.** The same system is available as an API:
+
+1. Open <http://127.0.0.1:8000/health>. It should return `{"status":"ok", ...}`.
 2. Open <http://127.0.0.1:8000/docs>, click **POST /chat**, then **Try it out**.
 3. Send messages using the same `session_id` so the memory carries across turns:
 
@@ -73,8 +82,10 @@ should start with `(.venv)`).
 {"session_id": "demo", "message": "And the waiting period?"}
 ```
 
-Each response contains the `answer`, the policy `citations`, the `memory_state`,
-and the `scores` (faithfulness, constraint retention, latency). Stop the server
+Each response contains the `answer`, the policy `citations`, the `evidence`
+(clause text, marked used or not used), the `memory_state`, and the `scores`
+(faithfulness, constraint retention, latency). A score is `null` when there is
+nothing to check, for example an answer that states no figures. Stop the server
 with Ctrl + C.
 
 ## Roadmap

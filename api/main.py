@@ -1,11 +1,21 @@
-"""FastAPI app: POST /chat keeps one memory tracker per session id."""
+"""FastAPI app.
+
+- GET  /            the chat interface (ui/index.html)
+- POST /chat        one message in, answer + citations + evidence + memory + scores out
+- DELETE /session/  forget a conversation
+"""
 from __future__ import annotations
 
+from pathlib import Path
+
 from fastapi import FastAPI
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
 from graft.memory import MemoryTracker
 from graft.pipeline import GraftPipeline
+
+UI_FILE = Path(__file__).resolve().parent.parent / "ui" / "index.html"
 
 app = FastAPI(title="Conversational GRAFT")
 pipeline = GraftPipeline.from_policy_file()
@@ -15,6 +25,11 @@ sessions: dict[str, MemoryTracker] = {}
 class ChatRequest(BaseModel):
     session_id: str
     message: str
+
+
+@app.get("/", include_in_schema=False)
+def home() -> FileResponse:
+    return FileResponse(UI_FILE, media_type="text/html")
 
 
 @app.get("/health")

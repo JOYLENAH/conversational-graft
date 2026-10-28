@@ -34,7 +34,7 @@ class SessionState:
     def to_dict(self) -> dict:
         d = asdict(self)
         d.pop("turns")
-        d["turn_count"] = len(self.turns)
+        d["turn_count"] = sum(1 for t in self.turns if t["role"] == "user")  # messages the user has sent
         return d
 
 

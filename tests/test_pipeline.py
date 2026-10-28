@@ -41,14 +41,40 @@ def test_follow_up_uses_last_benefit():
     assert "Optical care has a 90-day waiting period" in r["answer"]
 
 
+def test_turn_count_counts_only_user_messages():
+    p, m = make()
+    p.chat(m, "My son is 9 years old")
+    r = p.chat(m, "Is dental covered?")
+    assert r["memory_state"]["turn_count"] == 2
+
+
+def test_evidence_lists_used_and_unused_clauses():
+    p, m = make()
+    r = p.chat(m, "What is the waiting period for dental care? My child is 8")
+    used = {e["clause_id"] for e in r["evidence"] if e["used"]}
+    assert "C8" in used
+    assert all(e["text"] for e in r["evidence"])  # every item carries its clause text
+    assert used == set(r["citations"])
+
+
 def test_unknown_gives_safe_answer():
     p, m = make()
     r = p.chat(m, "Hello")
     assert "enough information" in r["answer"]
+    # nothing to verify and nothing remembered: no empty 100% scores
+    assert r["scores"]["faithfulness"] is None
+    assert r["scores"]["constraint_retention"] is None
 
 
 def test_faithfulness_flags_invented_numbers():
     assert faithfulness("Waiting period is 60 days", ["A 90-day waiting period applies"]) < 1.0
+
+
+def test_home_page_serves_the_chat_ui():
+    c = TestClient(app)
+    r = c.get("/")
+    assert r.status_code == 200
+    assert "Conversational GRAFT" in r.text
 
 
 def test_api_session_memory():
