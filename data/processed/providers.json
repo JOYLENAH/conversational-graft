@@ -1,0 +1,22 @@
+[
+  {
+    "name": "The Surgery",
+    "network_tier": ["Enhanced", "Standard"],
+    "region": "Kampala City",
+    "location": "Naguru",
+    "physical_address": "Plot 42 Naguru Drive",
+    "services_offered": ["Outpatient Only"],
+    "co_pay_ugx": 50000,
+    "contacts": ["+256414256003", "+256312256001"]
+  },
+  {
+    "name": "Mengo Hospital Eye Department",
+    "network_tier": ["Enhanced", "Standard"],
+    "region": "Kampala City",
+    "location": "Mengo",
+    "physical_address": "Sir Albert Cook Road, Mengo",
+    "services_offered": ["Ophthalmology"],
+    "co_pay_ugx": 0,
+    "contacts": ["0414 270222", "0772 412742", "0782 509333"]
+  }
+]

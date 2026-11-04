@@ -1,0 +1,30 @@
+{
+  "waiting_periods_standard": {
+    "outpatient": "0 months (from commencement)",
+    "inpatient": "3 months",
+    "maternity": "8 months",
+    "pre_existing_and_chronic": "12 months",
+    "elective_surgeries": "12 months",
+    "organ_transplant": "24 months"
+  },
+  "pre_authorization_rules": {
+    "required_services": [
+      "All Inpatient and Daycare treatments",
+      "All Surgical operations",
+      "CT scans and MRI",
+      "Long term medications (>1 month)",
+      "Inpatient Maternity"
+    ],
+    "validity_days": 14,
+    "emergency_notification_hours": 48
+  },
+  "claims_submission": {
+    "max_notice_days": 60,
+    "non_panel_reimbursement_claim_window_days": 30,
+    "settlement_appeal_window_days": 60
+  },
+  "loss_ratio_trigger": {
+    "threshold": "70% claims loss ratio",
+    "actions": ["Co-pay of >= UGX 10,000 per visit", "Benefit limitation", "Provider network revision"]
+  }
+}

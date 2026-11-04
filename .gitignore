@@ -9,3 +9,4 @@ models/
 indexes/
 .idea/
 .vscode/
+data/raw/

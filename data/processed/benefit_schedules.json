@@ -1,0 +1,32 @@
+{
+  "tiers": {
+    "SILVER": {
+      "network": "Enhanced Provider List",
+      "geographical_scope": "Uganda or on referral within East Africa plus temporary cover abroad (up to 6 weeks)",
+      "inpatient": {
+        "overall_limit_ugx": 50000000,
+        "daily_bed_limit_ugx": 200000,
+        "lodger_parent_child_below_8": true,
+        "accidents_and_emergency_ugx": 50000000,
+        "general_illness_ugx": 50000000,
+        "dental_inpatient_ugx": 7500000,
+        "ophthalmology_inpatient_ugx": 7500000,
+        "psychiatric_conditions_ugx": 10000000,
+        "chronic_pre_existing_ugx": 15000000,
+        "organ_transplant_ugx": 25000000
+      },
+      "outpatient": {
+        "overall_limit_ugx": 3000000,
+        "chronic_pre_existing_ugx": 1000000,
+        "physiotherapy_sessions": 10,
+        "optical_limit_ugx": 400000,
+        "dental_limit_ugx": 400000
+      },
+      "maternity": {
+        "maternity_limit_ugx": 2500000,
+        "premature_delivery_ugx": 2000000
+      },
+      "funeral_ugx": 2000000
+    }
+  }
+}
