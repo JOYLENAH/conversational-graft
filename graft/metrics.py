@@ -18,7 +18,8 @@ def faithfulness(answer: str, evidence_texts: list[str]) -> Optional[float]:
     limits). 1.0 means every number is supported. None means the answer states
     no figures, so there is nothing to verify.
     """
-    nums = NUM.findall(answer)
+    answer_text = re.sub(r"\[C\d+\]", "", answer)
+    nums = NUM.findall(answer_text)
     if not nums:
         return None
     evidence = " ".join(evidence_texts)

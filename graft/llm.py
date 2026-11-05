@@ -36,8 +36,8 @@ class RuleBasedLLM:
     def generate(self, prompt: str, facts: list[str], citations: list[str]) -> str:
         if not facts:
             return (
-                "I don't have enough information in the policy to answer that. "
-                "Could you tell me your child's age and which benefit you are asking about?"
+                "I couldn't find that detail in the policy clauses provided. "
+                "Please check with the insurer."
             )
         cites = " ".join(f"[{c}]" for c in citations)
         return " ".join(facts) + (f" {cites}" if cites else "")

@@ -36,6 +36,13 @@ class GraftPipeline:
         start = time.perf_counter()
         state = memory.update(message)
 
+        # Pointed questions should not be answered with unrelated benefit facts.
+        wants = set()
+        if re.search(r"\bwait", message, re.I):
+            wants.add("waiting_period")
+        if re.search(r"\bexclu|not covered", message, re.I):
+            wants.add("exclusion")
+
         # Graph facts: constraints from memory first, then benefit-specific rules.
         facts: list[Fact] = []
         benefits = self.graph.match_benefits(message)
@@ -43,20 +50,14 @@ class GraftPipeline:
             last = state.benefits_discussed[-1]
             benefits = [b for b in self.graph.match_benefits(last)]
 
-        if state.age is not None and (benefits or ELIGIBILITY_WORDS.search(message) or state.age is not None):
+        if state.age is not None and not wants:
             elig = self.graph.eligibility(state.age, state.is_student)
             if elig:
                 facts.append(elig)
-        # A pointed question ("what is the waiting period?") gets only the matching rule kinds.
-        wants = set()
-        if re.search(r"\bwait", message, re.I):
-            wants.add("waiting_period")
-        if re.search(r"\bexclu|not covered", message, re.I):
-            wants.add("exclusion")
         for b in benefits:
             bf = self.graph.benefit_facts(b)
             if wants:
-                bf = [f for f in bf if f.kind in wants] or bf
+                bf = [f for f in bf if f.kind in wants]
             facts.extend(bf)
             memory.record_benefit(b["name"])
 
@@ -64,7 +65,7 @@ class GraftPipeline:
         clauses = self.index.search(message, k=3)
         fact_clause_ids = {f.clause_id for f in facts if f.clause_id}
         citations = sorted(fact_clause_ids)
-        if not facts:
+        if not facts and not wants:
             citations = [c.clause_id for c in clauses[:2]]
             facts = [Fact("clause", c.text, c.clause_id, c.text) for c in clauses[:2]] if state.age is not None else []
 

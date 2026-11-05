@@ -1,0 +1,287 @@
+[
+  {
+    "id": "KIDO-AGE-01",
+    "policy_id": "PRU/MED/041206/2023",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "memory": {"child_age": 17, "relationship": "daughter", "marital_status": "unmarried"},
+    "clauses": [
+      {
+        "id": "C1",
+        "text": "Unmarried children, stepchildren, and legally adopted children born term (34 weeks or more) are covered up to a maximum of 18 years of age, residing with the insured member and dependent on them for support."
+      }
+    ],
+    "question": "My unmarried daughter is 17. Can she be covered?",
+    "answer": "She may be covered: age 17 is within the stated maximum of 18, but she must also reside with the insured member, depend on them for support, and have been born term (34 weeks or more) [C1]."
+  },
+  {
+    "id": "KIDO-AGE-02",
+    "policy_id": "PRU/MED/041206/2023",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "memory": {"child_age": 20, "is_full_time_student": true},
+    "clauses": [
+      {
+        "id": "C2",
+        "text": "Children aged over 18 years shall only be eligible if they are full-time students at a school, college, or university, residing with parents, and not aged above 25 years."
+      }
+    ],
+    "question": "My 20-year-old is a full-time student. Can they be covered?",
+    "answer": "Possibly. The policy also requires a child over 18 to reside with their parents and not be aged above 25 [C2]."
+  },
+  {
+    "id": "KIDO-AGE-03",
+    "policy_id": "PRU/MED/041206/2023",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "memory": {"child_age": 26, "is_full_time_student": true},
+    "clauses": [
+      {
+        "id": "C2",
+        "text": "Children aged over 18 years shall only be eligible if they are full-time students at a school, college, or university, residing with parents, and not aged above 25 years."
+      }
+    ],
+    "question": "My 26-year-old is still a full-time student. Are they eligible?",
+    "answer": "No. The student eligibility rule says the child must not be aged above 25 [C2]."
+  },
+  {
+    "id": "KIDO-AGE-04",
+    "policy_id": "PRU/MED/041206/2023",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "memory": {"gestational_age_at_birth_weeks": 33},
+    "clauses": [
+      {
+        "id": "C1",
+        "text": "Unmarried children, stepchildren, and legally adopted children born term (34 weeks or more) are covered up to a maximum of 18 years of age, residing with the insured member and dependent on them for support."
+      }
+    ],
+    "question": "My child was born at 33 weeks. Does this child rule include them?",
+    "answer": "The clause specifies children born term at 34 weeks or more, so it does not include 33 weeks [C1]."
+  },
+  {
+    "id": "KIDO-EXCL-01",
+    "policy_id": "PRU/MED/041206/2023",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "memory": {},
+    "clauses": [
+      {
+        "id": "C21",
+        "text": "Any type of infertility treatment, contraception, sterilization or fertilization, assisted reproduction (e.g. IVF), voluntary abortion, and maternity cover for dependent children are excluded."
+      }
+    ],
+    "question": "Does the policy cover IVF?",
+    "answer": "No. Assisted reproduction, including IVF, is excluded [C21]."
+  },
+  {
+    "id": "KIDO-EXCL-02",
+    "policy_id": "PRU/MED/041206/2023",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "memory": {},
+    "clauses": [
+      {
+        "id": "C21",
+        "text": "Any type of infertility treatment, contraception, sterilization or fertilization, assisted reproduction (e.g. IVF), voluntary abortion, and maternity cover for dependent children are excluded."
+      }
+    ],
+    "question": "Can my dependent child use the maternity benefit?",
+    "answer": "No. Maternity cover for dependent children is excluded [C21]."
+  },
+  {
+    "id": "KIDO-EXCL-03",
+    "policy_id": "PRU/MED/041206/2023",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "memory": {},
+    "clauses": [
+      {
+        "id": "C22",
+        "text": "Any pre-existing medical condition that the insured person was aware of at commencement which was not disclosed on the application form is excluded."
+      }
+    ],
+    "question": "What if a known pre-existing condition was not disclosed when joining?",
+    "answer": "A pre-existing condition known at commencement but not disclosed on the application form is excluded [C22]."
+  },
+  {
+    "id": "KIDO-EXCL-04",
+    "policy_id": "PRU/MED/041206/2023",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "memory": {},
+    "clauses": [
+      {
+        "id": "C23",
+        "text": "Hospitalization costs for a new member will not be covered if the member in question was already admitted before joining the scheme."
+      }
+    ],
+    "question": "Will the policy pay for a new member who was already admitted before joining?",
+    "answer": "No. Hospitalization costs are not covered if the new member was already admitted before joining the scheme [C23]."
+  },
+  {
+    "id": "KIDO-EXCL-05",
+    "policy_id": "PRU/MED/041206/2023",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "memory": {},
+    "clauses": [
+      {
+        "id": "C19",
+        "text": "Preventative dental examinations, prophylaxis treatment, dentures, false teeth, dental implants, cosmetic procedures, precious metals, and orthodontic treatment are excluded."
+      }
+    ],
+    "question": "Are braces or orthodontic treatment covered?",
+    "answer": "No. Orthodontic treatment is excluded [C19]."
+  },
+  {
+    "id": "KIDO-EXCL-06",
+    "policy_id": "PRU/MED/041206/2023",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "memory": {},
+    "clauses": [
+      {
+        "id": "C25",
+        "text": "Injuries or medical conditions resulting from substance abuse, alcoholism, self-inflicted injuries, hazardous sports (e.g. sky diving, martial arts), military operations, riots, or criminal acts are excluded."
+      }
+    ],
+    "question": "Are injuries from martial arts covered?",
+    "answer": "No. Injuries or medical conditions resulting from hazardous sports, including martial arts, are excluded [C25]."
+  },
+  {
+    "id": "KIDO-EXCL-07",
+    "policy_id": "PRU/MED/041206/2023",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "memory": {},
+    "clauses": [
+      {
+        "id": "C24",
+        "text": "Cosmetic, reconstructive, or remedial disorders, keloid or scar removal, breast reduction or enlargement, obesity, weight control, and body piercing/tattooing treatments are excluded."
+      }
+    ],
+    "question": "Does the policy cover cosmetic treatment?",
+    "answer": "No. Cosmetic treatments are excluded [C24]."
+  },
+  {
+    "id": "JUNIOR-AGE-01",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "memory": {"child_age": 16},
+    "clauses": [
+      {
+        "id": "JUNIOR-P4",
+        "text": "The brochure describes J-Care Junior as stand-alone health cover for children aged 0–17 years."
+      }
+    ],
+    "question": "Can a 16-year-old be covered under J-Care Junior?",
+    "answer": "Yes. The brochure lists J-Care Junior for children aged 0–17 [JUNIOR-P4]."
+  },
+  {
+    "id": "JUNIOR-AGE-02",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "memory": {"child_age": 18},
+    "clauses": [
+      {
+        "id": "JUNIOR-P4",
+        "text": "The brochure describes J-Care Junior as stand-alone health cover for children aged 0–17 years."
+      }
+    ],
+    "question": "Can an 18-year-old be covered under J-Care Junior?",
+    "answer": "The brochure lists the age range as 0–17, so it does not establish cover for an 18-year-old [JUNIOR-P4]."
+  },
+  {
+    "id": "JUNIOR-AGE-03",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "memory": {"age_at_birth_weeks": 38},
+    "clauses": [
+      {
+        "id": "JUNIOR-P13",
+        "text": "The brochure states eligibility from birth provided the baby is term at 38 weeks, through age 17."
+      }
+    ],
+    "question": "Can a newborn be covered from birth?",
+    "answer": "The brochure says cover can start from birth if the baby is term at 38 weeks; it lists eligibility through age 17 [JUNIOR-P13]."
+  },
+  {
+    "id": "JUNIOR-EXCL-01",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "memory": {},
+    "clauses": [
+      {
+        "id": "JUNIOR-P14",
+        "text": "The brochure lists genetic disorders, genetic testing, and related conditions among exclusions."
+      }
+    ],
+    "question": "Are genetic disorders covered?",
+    "answer": "The brochure lists genetic disorders and related conditions among the exclusions [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-02",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "memory": {},
+    "clauses": [
+      {
+        "id": "JUNIOR-P14",
+        "text": "Cosmetic or plastic surgery is excluded unless necessitated by an accidental injury occurring while the insured is covered."
+      }
+    ],
+    "question": "Is plastic surgery covered after an accident?",
+    "answer": "It may be covered if the surgery is necessitated by an accidental injury that occurs while the child is insured [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-03",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "memory": {},
+    "clauses": [
+      {
+        "id": "JUNIOR-P14",
+        "text": "Nutritional food supplements or replacements and vitamins are excluded, whether prescribed by a physician or not."
+      }
+    ],
+    "question": "Are prescribed vitamins covered?",
+    "answer": "No. The brochure excludes vitamins and nutritional supplements, whether or not a physician prescribes them [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-04",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "memory": {},
+    "clauses": [
+      {
+        "id": "JUNIOR-P14",
+        "text": "Expenses resulting from participation in extreme or hazardous sports and activities, or riding or driving in any kind of race, are excluded."
+      }
+    ],
+    "question": "Are injuries from hazardous sports covered?",
+    "answer": "No. The brochure excludes expenses resulting from extreme or hazardous sports and racing activities [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-05",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "memory": {},
+    "clauses": [
+      {
+        "id": "JUNIOR-P14",
+        "text": "Services primarily for weight reduction, obesity treatment, slimming operations, or care using weight reduction as the main treatment method are excluded."
+      }
+    ],
+    "question": "Does the brochure cover treatment mainly for weight loss?",
+    "answer": "No. The brochure excludes services primarily for weight reduction and treatment of obesity [JUNIOR-P14]."
+  }
+]

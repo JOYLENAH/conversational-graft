@@ -88,6 +88,20 @@ Each response contains the `answer`, the policy `citations`, the `evidence`
 nothing to check, for example an answer that states no figures. Stop the server
 with Ctrl + C.
 
+## Policy PDF preparation
+
+Place policy PDFs in `data/raw/`, then run:
+
+```powershell
+python data/extract_policies.py
+```
+
+The script writes one page-numbered JSON file per PDF under `data/extracted/`.
+It preserves the source filename and flags pages with no extractable text, which
+may need OCR or manual review. Extraction does not add policy content to the chat
+or train a model; clauses must be reviewed and kept separate by policy before
+they are used for retrieval or training.
+
 ## Roadmap
 
 - W1-W2: knowledge graph + vector index (skeleton done)

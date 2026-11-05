@@ -10,3 +10,4 @@ indexes/
 .idea/
 .vscode/
 data/raw/
+data/extracted/

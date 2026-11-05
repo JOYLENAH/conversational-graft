@@ -99,7 +99,7 @@ class PolicyGraph:
                 facts.append(
                     Fact(
                         "waiting_period",
-                        f"{benefit['name']} has a {d['days']}-day waiting period.",
+                        d["text"],
                         d["clause_id"],
                         d["text"],
                     )
