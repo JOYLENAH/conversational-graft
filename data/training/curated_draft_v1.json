@@ -1,0 +1,2579 @@
+{
+  "dataset_name": "Conversational GRAFT curated review draft v1",
+  "status": "draft_needs_human_review",
+  "record_count": 99,
+  "source_batch_count": 4,
+  "records": [
+    {
+      "id": "KIDO-AGE-01",
+      "policy_id": "PRU/MED/041206/2023",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "memory": {
+        "child_age": 17,
+        "relationship": "daughter",
+        "marital_status": "unmarried"
+      },
+      "clauses": [
+        {
+          "id": "C1",
+          "text": "Unmarried children, stepchildren, and legally adopted children born term (34 weeks or more) are covered up to a maximum of 18 years of age, residing with the insured member and dependent on them for support.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "My unmarried daughter is 17. Can she be covered?",
+      "answer": "She may be covered: age 17 is within the stated maximum of 18, but she must also reside with the insured member, depend on them for support, and have been born term (34 weeks or more) [C1].",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-02",
+      "policy_id": "PRU/MED/041206/2023",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "memory": {
+        "child_age": 20,
+        "is_full_time_student": true
+      },
+      "clauses": [
+        {
+          "id": "C2",
+          "text": "Children aged over 18 years shall only be eligible if they are full-time students at a school, college, or university, residing with parents, and not aged above 25 years.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "My 20-year-old is a full-time student. Can they be covered?",
+      "answer": "Possibly. The policy also requires a child over 18 to reside with their parents and not be aged above 25 [C2].",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-03",
+      "policy_id": "PRU/MED/041206/2023",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "memory": {
+        "child_age": 26,
+        "is_full_time_student": true
+      },
+      "clauses": [
+        {
+          "id": "C2",
+          "text": "Children aged over 18 years shall only be eligible if they are full-time students at a school, college, or university, residing with parents, and not aged above 25 years.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "My 26-year-old is still a full-time student. Are they eligible?",
+      "answer": "No. The student eligibility rule says the child must not be aged above 25 [C2].",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-04",
+      "policy_id": "PRU/MED/041206/2023",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "memory": {
+        "gestational_age_at_birth_weeks": 33
+      },
+      "clauses": [
+        {
+          "id": "C1",
+          "text": "Unmarried children, stepchildren, and legally adopted children born term (34 weeks or more) are covered up to a maximum of 18 years of age, residing with the insured member and dependent on them for support.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "My child was born at 33 weeks. Does this child rule include them?",
+      "answer": "The clause specifies children born term at 34 weeks or more, so it does not include 33 weeks [C1].",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-01",
+      "policy_id": "PRU/MED/041206/2023",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "memory": {},
+      "clauses": [
+        {
+          "id": "C21",
+          "text": "Any type of infertility treatment, contraception, sterilization or fertilization, assisted reproduction (e.g. IVF), voluntary abortion, and maternity cover for dependent children are excluded.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "Does the policy cover IVF?",
+      "answer": "No. Assisted reproduction, including IVF, is excluded [C21].",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-02",
+      "policy_id": "PRU/MED/041206/2023",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "memory": {},
+      "clauses": [
+        {
+          "id": "C21",
+          "text": "Any type of infertility treatment, contraception, sterilization or fertilization, assisted reproduction (e.g. IVF), voluntary abortion, and maternity cover for dependent children are excluded.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "Can my dependent child use the maternity benefit?",
+      "answer": "No. Maternity cover for dependent children is excluded [C21].",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-03",
+      "policy_id": "PRU/MED/041206/2023",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "memory": {},
+      "clauses": [
+        {
+          "id": "C22",
+          "text": "Any pre-existing medical condition that the insured person was aware of at commencement which was not disclosed on the application form is excluded.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "What if a known pre-existing condition was not disclosed when joining?",
+      "answer": "A pre-existing condition known at commencement but not disclosed on the application form is excluded [C22].",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-04",
+      "policy_id": "PRU/MED/041206/2023",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "memory": {},
+      "clauses": [
+        {
+          "id": "C23",
+          "text": "Hospitalization costs for a new member will not be covered if the member in question was already admitted before joining the scheme.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "Will the policy pay for a new member who was already admitted before joining?",
+      "answer": "No. Hospitalization costs are not covered if the new member was already admitted before joining the scheme [C23].",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-05",
+      "policy_id": "PRU/MED/041206/2023",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "memory": {},
+      "clauses": [
+        {
+          "id": "C19",
+          "text": "Preventative dental examinations, prophylaxis treatment, dentures, false teeth, dental implants, cosmetic procedures, precious metals, and orthodontic treatment are excluded.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "Are braces or orthodontic treatment covered?",
+      "answer": "No. Orthodontic treatment is excluded [C19].",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-06",
+      "policy_id": "PRU/MED/041206/2023",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "memory": {},
+      "clauses": [
+        {
+          "id": "C25",
+          "text": "Injuries or medical conditions resulting from substance abuse, alcoholism, self-inflicted injuries, hazardous sports (e.g. sky diving, martial arts), military operations, riots, or criminal acts are excluded.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "Are injuries from martial arts covered?",
+      "answer": "No. Injuries or medical conditions resulting from hazardous sports, including martial arts, are excluded [C25].",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-07",
+      "policy_id": "PRU/MED/041206/2023",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "memory": {},
+      "clauses": [
+        {
+          "id": "C24",
+          "text": "Cosmetic, reconstructive, or remedial disorders, keloid or scar removal, breast reduction or enlargement, obesity, weight control, and body piercing/tattooing treatments are excluded.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "Does the policy cover cosmetic treatment?",
+      "answer": "No. Cosmetic treatments are excluded [C24].",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-AGE-01",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "memory": {
+        "child_age": 16
+      },
+      "clauses": [
+        {
+          "id": "JUNIOR-P4",
+          "text": "The brochure describes J-Care Junior as stand-alone health cover for children aged 0–17 years.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "Can a 16-year-old be covered under J-Care Junior?",
+      "answer": "Yes. The brochure lists J-Care Junior for children aged 0–17 [JUNIOR-P4].",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-AGE-02",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "memory": {
+        "child_age": 18
+      },
+      "clauses": [
+        {
+          "id": "JUNIOR-P4",
+          "text": "The brochure describes J-Care Junior as stand-alone health cover for children aged 0–17 years.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "Can an 18-year-old be covered under J-Care Junior?",
+      "answer": "The brochure lists the age range as 0–17, so it does not establish cover for an 18-year-old [JUNIOR-P4].",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-AGE-03",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "memory": {
+        "age_at_birth_weeks": 38
+      },
+      "clauses": [
+        {
+          "id": "JUNIOR-P13",
+          "text": "The brochure states eligibility from birth provided the baby is term at 38 weeks, through age 17.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "Can a newborn be covered from birth?",
+      "answer": "The brochure says cover can start from birth if the baby is term at 38 weeks; it lists eligibility through age 17 [JUNIOR-P13].",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-01",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "The brochure lists genetic disorders, genetic testing, and related conditions among exclusions.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "Are genetic disorders covered?",
+      "answer": "The brochure lists genetic disorders and related conditions among the exclusions [JUNIOR-P14].",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-02",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Cosmetic or plastic surgery is excluded unless necessitated by an accidental injury occurring while the insured is covered.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "Is plastic surgery covered after an accident?",
+      "answer": "It may be covered if the surgery is necessitated by an accidental injury that occurs while the child is insured [JUNIOR-P14].",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-03",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Nutritional food supplements or replacements and vitamins are excluded, whether prescribed by a physician or not.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "Are prescribed vitamins covered?",
+      "answer": "No. The brochure excludes vitamins and nutritional supplements, whether or not a physician prescribes them [JUNIOR-P14].",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-04",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Expenses resulting from participation in extreme or hazardous sports and activities, or riding or driving in any kind of race, are excluded.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "Are injuries from hazardous sports covered?",
+      "answer": "No. The brochure excludes expenses resulting from extreme or hazardous sports and racing activities [JUNIOR-P14].",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-05",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Services primarily for weight reduction, obesity treatment, slimming operations, or care using weight reduction as the main treatment method are excluded.",
+          "role": "supporting",
+          "source_page": null
+        }
+      ],
+      "question": "Does the brochure cover treatment mainly for weight loss?",
+      "answer": "No. The brochure excludes services primarily for weight reduction and treatment of obesity [JUNIOR-P14].",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "answerable": true,
+      "citation_namespace": "pilot_legacy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-05",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 12,
+        "marital_status": "unmarried"
+      },
+      "clauses": [
+        {
+          "id": "Clause 3.5(ii)",
+          "text": "The unmarried children, stepchildren and legally adopted children of the Insured member provided they are born term as defined by this policy and were discharged from hospital after birth up to a maximum of eighteen (18) years of age, are residing with the Insured member and are dependent upon him for support.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 3.5(i)",
+          "text": "The legal spouse of the Insured member having attained the age of not more than seventy (70) years (at their first Join date) and is resident in Uganda. Coverage of an insured spouse ends on the date of divorce.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Can my unmarried 12-year-old child join the policy?",
+      "answer": "Yes, an unmarried child up to 18 years of age is eligible. However, they must be born term, discharged from the hospital after birth, reside with the insured member, and depend on them for support [Clause 3.5(ii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-06",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 15,
+        "marital_status": "married"
+      },
+      "clauses": [
+        {
+          "id": "Clause 3.5(ii)",
+          "text": "The unmarried children, stepchildren and legally adopted children of the Insured member provided they are born term as defined by this policy and were discharged from hospital after birth up to a maximum of eighteen (18) years of age, are residing with the Insured member and are dependent upon him for support.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.69",
+          "text": "Term baby: a delivery of a baby at 34 weeks or more.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "My 15-year-old child is married. Are they eligible as a dependent?",
+      "answer": "No. The policy explicitly specifies that children must be unmarried to be eligible as dependents [Clause 3.5(ii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-07",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 19,
+        "is_full_time_student": false
+      },
+      "clauses": [
+        {
+          "id": "Clause 3.5(ii)",
+          "text": "Children aged over eighteen (18) years shall only be eligible if they are full-time students at a school, college or university and are not aged above twenty-five (25) years of age.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 3.5(i)",
+          "text": "The legal spouse of the Insured member having attained the age of not more than seventy (70) years (at their first Join date) and is resident in Uganda.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Is my 19-year-old child eligible for cover if they are not a student?",
+      "answer": "No. Children over 18 years of age are only eligible if they are full-time students at a school, college, or university [Clause 3.5(ii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-08",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 22,
+        "is_full_time_student": true
+      },
+      "clauses": [
+        {
+          "id": "Clause 3.5(ii)",
+          "text": "Children aged over eighteen (18) years shall only be eligible if they are full-time students at a school, college or university and are not aged above twenty-five (25) years of age.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 3.8(iii)",
+          "text": "A new child: Can be covered from birth or from the date an adoption is made final as the case may be, provided one or both parents are covered concurrently in the existing Policy.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "My 22-year-old child is enrolled full-time at university. Can they be covered?",
+      "answer": "Yes. Children over 18 are eligible up to 25 years of age provided they are full-time students at a school, college, or university [Clause 3.5(ii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-09",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "gestational_age_weeks": 35
+      },
+      "clauses": [
+        {
+          "id": "Clause 2.69",
+          "text": "Term baby: a delivery of a baby at 34 weeks or more.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.59",
+          "text": "Prematurity: The birth of a baby of less than 34 weeks gestational age, and before the developing organs are mature enough to allow normal postnatal survival.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.19",
+          "text": "Dependent: means the Insured member's spouse, children, adopted children and stepchildren who are eligible for coverage according to the Eligibility conditions set forth in this Policy.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Is a baby born at 35 weeks considered a term baby under KIDO?",
+      "answer": "Yes. The policy defines a term baby as a delivery at 34 weeks or more, whereas prematurity applies to births at less than 34 weeks [Clause 2.69, Clause 2.59].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-10",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "gestational_age_weeks": 31
+      },
+      "clauses": [
+        {
+          "id": "Clause 2.59",
+          "text": "Prematurity: The birth of a baby of less than 34 weeks gestational age, and before the developing organs are mature enough to allow normal postnatal survival.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 3.5(ii)",
+          "text": "The unmarried children, stepchildren and legally adopted children of the Insured member provided they are born term as defined by this policy and were discharged from hospital after birth up to a maximum of eighteen (18) years of age, are residing with the Insured member and are dependent upon him for support.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.7",
+          "text": "Birth defect: means any deformity/abnormal condition or anomaly, or disability of a person arising during the antenatal stages of pregnancy or caused by/or during childbirth.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Is a baby born at 31 weeks eligible under standard child dependent rules?",
+      "answer": "No. A baby born at 31 weeks is considered premature (less than 34 weeks), whereas standard dependent child eligibility requires the child to be born term [Clause 2.59, Clause 3.5(ii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-11",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "Clause 3.8(iii)",
+          "text": "A new child: Can be covered from birth or from the date an adoption is made final as the case may be, provided one or both parents are covered concurrently in the existing Policy. The Company will normally allow the KIDO to add a newborn child without submitting details of their medical history, provided they are added within three (3) months from the birth date.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 3.8(i)",
+          "text": "Addition: KIDO may at any time, upon completing and sending to the Company the duly completed Proposal form (Member Application form), add a new Insured member and his Dependents or new Dependents of an existing Insured member to the Policy.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Within what timeframe must a newborn be added to avoid submitting medical history?",
+      "answer": "A newborn can normally be added without submitting details of their medical history if they are added within three (3) months from their birth date, provided one or both parents are concurrently covered [Clause 3.8(iii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-12",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "conception_method": "assisted conception"
+      },
+      "clauses": [
+        {
+          "id": "Clause 3.8(iii)",
+          "text": "However, if the child was born as a result of any method of assisted conception or if they have been adopted, KIDO will be required to submit full particulars of such child, including the child's full medical history, following which the Company will extend cover to such child provided it is satisfied that the conditions for cover have been met.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 3.8(iv)",
+          "text": "Deletion: KIDO may at any time delete a Insured member and their Dependents from the Policy subject to a written request for deletion.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Are newborns conceived via assisted conception automatically covered without medical history?",
+      "answer": "No. If a child is born as a result of any method of assisted conception, full particulars including full medical history must be submitted before cover is extended [Clause 3.8(iii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-13",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "is_adopted": true
+      },
+      "clauses": [
+        {
+          "id": "Clause 3.8(iii)",
+          "text": "A new child: Can be covered from birth or from the date an adoption is made final as the case may be, provided one or both parents are covered concurrently in the existing Policy... if they have been adopted, KIDO will be required to submit full particulars of such child, including the child's full medical history, following which the Company will extend cover to such child provided it is satisfied that the conditions for cover have been met.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.19",
+          "text": "Dependent: means the Insured member's spouse, children, adopted children and stepchildren who are eligible for coverage according to the Eligibility conditions set forth in this Policy.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "When does coverage start for a legally adopted child and what details are needed?",
+      "answer": "Coverage can start from the date an adoption is made final, provided one or both parents are concurrently covered and full particulars including medical history are submitted [Clause 3.8(iii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-14",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 7
+      },
+      "clauses": [
+        {
+          "id": "Section 7 (Inpatient Benefits Table)",
+          "text": "Lodger fees for parent accompanying child below 8 years: Covered (across Platinum, Gold, Silver, Bronze, Copper, Marble).",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Section 8(A)(i)",
+          "text": "The policy will cover accommodation for a parent or legal guardian accompanying a member who is below 12 years of age.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Are lodger fees covered under the standard retail package for a parent accompanying a 7-year-old child?",
+      "answer": "Yes. Under the KIDO standard retail benefit table, lodger fees are covered for a parent accompanying a child below 8 years of age [Section 7 (Inpatient Benefits Table)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": [
+        "check_relevance_to_research_scope"
+      ]
+    },
+    {
+      "id": "KIDO-AGE-15",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 10
+      },
+      "clauses": [
+        {
+          "id": "Section 7 (Inpatient Benefits Table)",
+          "text": "Lodger fees for parent accompanying child below 8 years: Covered",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 3.5(ii)",
+          "text": "The unmarried children, stepchildren and legally adopted children of the Insured member provided they are born term as defined by this policy and were discharged from hospital after birth up to a maximum of eighteen (18) years of age, are residing with the Insured member and are dependent upon him for support.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Does the standard retail benefit schedule cover parent lodger fees for a 10-year-old child?",
+      "answer": "No. Under the standard retail schedule, parent lodger fees are only covered for children below 8 years of age [Section 7 (Inpatient Benefits Table)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": [
+        "check_relevance_to_research_scope"
+      ]
+    },
+    {
+      "id": "KIDO-AGE-16",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 10
+      },
+      "clauses": [
+        {
+          "id": "Section 7 (Inpatient Only Cover)",
+          "text": "Lodger fees for parent accompanying child below 12 years: Covered",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Section 7 (Inpatient Benefits Table)",
+          "text": "Lodger fees for parent accompanying child below 8 years: Covered",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Under the Inpatient Only Cover schedule, is a parent covered for staying with a 10-year-old child?",
+      "answer": "Yes. Under the specific Inpatient Only Cover schedule, lodger fees are covered for a parent accompanying a child below 12 years of age [Section 7 (Inpatient Only Cover)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": [
+        "check_relevance_to_research_scope"
+      ]
+    },
+    {
+      "id": "KIDO-AGE-17",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 12,
+        "treatment": "braces"
+      },
+      "clauses": [
+        {
+          "id": "Section 7 (Senior Citizens Cover - Dental Benefit)",
+          "text": "Braces covered for children up to 14 years of age: covered",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE21",
+          "text": "Preventative dental examinations, prophylaxis treatment, dentures, false teeth, dental implants and/or orthodontic treatment.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Does the Senior Citizens dental benefit table cover braces for a 12-year-old child?",
+      "answer": "Yes. Under the Senior Citizens dental schedule, braces are listed as covered for children up to 14 years of age [Section 7 (Senior Citizens Cover - Dental Benefit)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": [
+        "check_relevance_to_research_scope"
+      ]
+    },
+    {
+      "id": "KIDO-AGE-18",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 16,
+        "treatment": "braces"
+      },
+      "clauses": [
+        {
+          "id": "Section 7 (Senior Citizens Cover - Dental Benefit)",
+          "text": "Braces covered for children up to 14 years of age: covered",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.18",
+          "text": "Dentist: means a registered or licensed dental practitioner who is legally authorized to practice dentistry by the Uganda Medical and Dental Practitioners Council.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Can a 16-year-old child get coverage for braces under the child dental provisions in the Senior Citizens schedule?",
+      "answer": "No. The provision covering braces specifically limits eligibility to children up to 14 years of age [Section 7 (Senior Citizens Cover - Dental Benefit)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": [
+        "check_relevance_to_research_scope"
+      ]
+    },
+    {
+      "id": "KIDO-AGE-19",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 5
+      },
+      "clauses": [
+        {
+          "id": "Clause 2.73",
+          "text": "UNEPI Vaccination: (United Nations Expanded Program for Immunization) shall refer to the following vaccines which are provided for free in Uganda; Polio, BCG, DPT (combined with Hepatitis B and Hemophilia Influenza B (HIB) and Measles.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Section 8(D)(vi)",
+          "text": "Other services rendered under outpatient include physiotherapy which shall be on referral basis by a Physician and vaccinations for children in accordance with the Ministry of Health Uganda National Expanded Programme for Immunisation (UNEPI).",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE15",
+          "text": "*Vaccinations.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Are standard child immunizations covered for a young child?",
+      "answer": "Yes. Outpatient cover includes child vaccinations in accordance with the Uganda National Expanded Programme for Immunisation (UNEPI), covering vaccines such as Polio, BCG, DPT, and Measles [Clause 2.73, Section 8(D)(vi)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": [
+        "check_relevance_to_research_scope"
+      ]
+    },
+    {
+      "id": "KIDO-AGE-20",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 14,
+        "resides_with_member": false
+      },
+      "clauses": [
+        {
+          "id": "Clause 3.5(ii)",
+          "text": "The unmarried children, stepchildren and legally adopted children of the Insured member provided they are born term as defined by this policy and were discharged from hospital after birth up to a maximum of eighteen (18) years of age, are residing with the Insured member and are dependent upon him for support.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 3.5(i)",
+          "text": "The legal spouse of the Insured member having attained the age of not more than seventy (70) years (at their first Join date) and is resident in Uganda.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Can my 14-year-old child be covered if they live permanently with an aunt instead of me?",
+      "answer": "No. To be eligible for coverage, dependent children must reside with the insured member and depend on them for support [Clause 3.5(ii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-21",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 16,
+        "financially_independent": true
+      },
+      "clauses": [
+        {
+          "id": "Clause 3.5(ii)",
+          "text": "The unmarried children, stepchildren and legally adopted children of the Insured member provided they are born term as defined by this policy and were discharged from hospital after birth up to a maximum of eighteen (18) years of age, are residing with the Insured member and are dependent upon him for support.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.61",
+          "text": "Insured member: means a subscriber of the KIDO or any member of a legally established organization or association...",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "My 16-year-old child has their own job and supports themselves. Are they eligible as my dependent?",
+      "answer": "No. Children under 18 must be dependent upon the insured member for support to qualify as eligible dependents [Clause 3.5(ii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-22",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 10,
+        "relationship": "stepchild"
+      },
+      "clauses": [
+        {
+          "id": "Clause 3.5(ii)",
+          "text": "The unmarried children, stepchildren and legally adopted children of the Insured member provided they are born term as defined by this policy and were discharged from hospital after birth up to a maximum of eighteen (18) years of age, are residing with the Insured member and are dependent upon him for support.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.19",
+          "text": "Dependent: means the Insured member's spouse, children, adopted children and stepchildren who are eligible for coverage according to the Eligibility conditions set forth in this Policy.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Can I include my 10-year-old stepchild as a dependent on my policy?",
+      "answer": "Yes. Stepchildren are explicitly included as eligible dependents provided they meet the age, residency, and support requirements [Clause 3.5(ii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-23",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 3
+      },
+      "clauses": [
+        {
+          "id": "Clause 3.8(vii)",
+          "text": "Covered benefits arising from Accident or Illness occurring during the Policy period for the Insured member or their Dependents shall cease immediately upon his deletion from the Policy.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 3.8(iv)",
+          "text": "Deletion: KIDO may at any time delete a Insured member and their Dependents from the Policy subject to: a written request for deletion...",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "If my 3-year-old child is deleted from the policy, do benefits for an ongoing illness continue?",
+      "answer": "No. Covered benefits for a dependent cease immediately upon their deletion from the policy [Clause 3.8(vii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": [
+        "check_relevance_to_research_scope"
+      ]
+    },
+    {
+      "id": "KIDO-AGE-24",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "not_stated",
+      "review_status": "draft_needs_human_review",
+      "answerable": false,
+      "memory": {
+        "child_age": 18
+      },
+      "clauses": [],
+      "question": "What exact date does dependent-child coverage end when a child reaches the maximum age?",
+      "answer": "The policy gives an age limit for dependent children but does not state the exact date their coverage ends. Please check with the insurer.",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-25",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "not_stated",
+      "review_status": "draft_needs_human_review",
+      "answerable": false,
+      "memory": {
+        "child_age": 10
+      },
+      "clauses": [],
+      "question": "Does KIDO require a birth certificate or a DNA test to confirm child eligibility?",
+      "answer": "The provided policy information does not state whether a birth certificate or DNA test is specifically required for child eligibility verification. Please check with the insurer.",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-26",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "not_stated",
+      "review_status": "draft_needs_human_review",
+      "answerable": false,
+      "memory": {
+        "child_age": 16
+      },
+      "clauses": [],
+      "question": "Can a 16-year-old child be enrolled as a principal member in KIDO?",
+      "answer": "The provided policy information does not state whether a 16-year-old can enroll as a principal member. Please check with the insurer.",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-27",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "not_stated",
+      "review_status": "draft_needs_human_review",
+      "answerable": false,
+      "memory": {
+        "child_age": 20,
+        "has_disability": true
+      },
+      "clauses": [],
+      "question": "Is an unmarried 20-year-old child with a permanent disability eligible if they are not a student?",
+      "answer": "The provided policy information does not state any exception or rule for disabled adult children who are not students. Please check with the insurer.",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-AGE-28",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "not_stated",
+      "review_status": "draft_needs_human_review",
+      "answerable": false,
+      "memory": {
+        "child_age": 21,
+        "student_status": "part-time"
+      },
+      "clauses": [],
+      "question": "Can a 21-year-old part-time university student be covered as a dependent?",
+      "answer": "The provided policy information does not state whether part-time students qualify for dependent coverage. Please check with the insurer.",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-08",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE23",
+          "text": "Children's food, baby supplies, vitamin, mineral or organic supplements, de-wormers, products that can be purchased without a doctor's prescription such as, but not limited to, mouthwash, toothpaste, antiseptic lozenges or sprays, shampoo, sunscreen, etc.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE15",
+          "text": "*Vaccinations.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Does KIDO cover baby formula and food supplies for young children?",
+      "answer": "No. Children's food, baby supplies, and nutritional supplements are explicitly excluded under the policy [PE23].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-09",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE23",
+          "text": "Children's food, baby supplies, vitamin, mineral or organic supplements, de-wormers, products that can be purchased without a doctor's prescription such as, but not limited to, mouthwash, toothpaste, antiseptic lozenges or sprays, shampoo, sunscreen, etc.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 6.6.1",
+          "text": "Where necessary and when the treating Medical Practitioner does not have the prescribed medicines, the Hospital/clinic shall provide a prescription to the Insured to procure such medicines from a Pharmacy registered with the Company.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Are over-the-counter de-wormers or vitamin supplements covered for children?",
+      "answer": "No. De-wormers, vitamin, mineral, and organic supplements, as well as over-the-counter products, are excluded [PE23].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-10",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE11",
+          "text": "Learning difficulties and/or disorders, developmental disorders, and speech/or voice problems.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE12",
+          "text": "Cosmetic, reconstructive, or remedial disorders, whether or not for psychological reasons, and/or any complications arising thereafter including and not limited to removal of fat from any part of the body...",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Is speech therapy for a developmental learning disorder covered under KIDO?",
+      "answer": "No. Learning difficulties, developmental disorders, and speech or voice problems are general exclusions under the policy [PE11].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-11",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE14",
+          "text": "Circumcision unless medically necessary for the treatment of disease/injury not excluded in the Policy.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE31",
+          "text": "Permanent family planning methods such as tubal ligation, vasectomy, or the reversal of such procedures.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Is elective routine circumcision covered for a male child?",
+      "answer": "No. Circumcision is excluded unless it is medically necessary for treating a non-excluded disease or injury [PE14].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-12",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE24",
+          "text": "*Supplying, maintaining, or fitting any external prostheses or appliances, rental or purchase of crutches, wheelchairs, or other equipment, medical or otherwise. The Company will pay for spinal support, knee brace, collar brace, etc. if it is part of a surgical operation and/or integral to the treatment of a covered medical condition.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.28",
+          "text": "External Prosthesis: An artificial device that replaces a missing body part, which may be lost/absent through trauma, disease, or congenital conditions such as a prosthetic limb, ear which is required at time of a surgical procedure.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Are wheelchair rentals or crutches covered for a child recovering from a broken leg?",
+      "answer": "No. Renting or purchasing wheelchairs, crutches, or external equipment is excluded, though specific braces like knee or collar braces are covered if integral to a surgical operation for a covered condition [PE24].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-13",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE9",
+          "text": "Treatment by chiropractors, acupuncturists, and herbalists, stays and/or maintenance or treatment received in nature cure clinics or similar establishments or private beds registered within a nursing home, sanatoria, convalescent and/or rest homes or 'cures' attached to such establishments.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE17",
+          "text": "Treatment in any quarantine/isolation or rest home, spa, hydro-clinic, health resort, massage center and chiropractic treatment, sanatorium or long-term care facility that is not a hospital.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Will KIDO cover herbal medicine or chiropractic treatments for my child?",
+      "answer": "No. Treatment by chiropractors, acupuncturists, and herbalists is strictly excluded [PE9].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-14",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE28",
+          "text": "Treatment as a result of proven medical negligence or malpractice.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE36",
+          "text": "Any costs incurred in the pursuit of any legal action against us.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Does the policy pay for medical treatments required because of proven medical malpractice?",
+      "answer": "No. Treatment required as a result of proven medical negligence or malpractice is excluded [PE28].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-15",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE34",
+          "text": "All costs relating to appointments not kept or cancelled by the Insured or Insured dependents.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE35",
+          "text": "All costs relating to interest charged and legal fees arising out of overdue medical expenses.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "If I miss a scheduled doctor's appointment for my child, will KIDO cover the cancellation fee?",
+      "answer": "No. All costs relating to missed or cancelled appointments are excluded [PE34].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-16",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE1",
+          "text": "Abuse of alcohol, drug, any other intoxicating substance, or any addictive condition of any kind and any medical condition arising directly or indirectly from any such abuse or addiction not limited to Admissions for rehabilitation.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE5",
+          "text": "Injury or Illness caused by, contributed to, or resulting from self-infliction, or willful exposure to danger.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Are rehabilitation admissions for drug abuse covered under KIDO?",
+      "answer": "No. Medical conditions arising directly or indirectly from drug or alcohol abuse, including admissions for rehabilitation, are excluded [PE1].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-17",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE29",
+          "text": "Medical certificates and examinations for residence, employment, or travel.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE13",
+          "text": "Routine medical examinations and regular check-ups, unless explicitly included as part of the scheme agreed by the member's employer.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Will KIDO pay for a medical examination required for my child's travel visa?",
+      "answer": "No. Medical certificates and examinations for residence, employment, or travel are excluded [PE29].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-18",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE33",
+          "text": "All transportation costs occurring during trips specifically made for the purpose of obtaining Treatment, any other non-medical items that are not required for treatment will not be catered for by the Company e.g. phone calls, DVDs, airtime, internet, newspapers, diapers.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Section 8(A)(v)",
+          "text": "Ambulance services for transportation of a sick Member for eligible inpatient treatment from an area where facilities for adequate care do not exist to the nearest suitable hospital or licensed medical facility will be covered within the annual inpatient limit.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Are non-medical expenses like hospital diapers or travel costs for treatment covered?",
+      "answer": "No. Transportation costs for trips specifically made to obtain treatment and non-medical items such as diapers, internet, or phone calls are excluded [PE33].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-19",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE22",
+          "text": "Obesity, special diet, or weight control, compulsive or addictive eating disorders and/or homesickness.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE23",
+          "text": "Children's food, baby supplies, vitamin, mineral or organic supplements, de-wormers...",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Does KIDO cover treatment for eating disorders or prescribed special dietary regimes?",
+      "answer": "No. Special diets, obesity treatment, weight control, compulsive/addictive eating disorders, and homesickness are excluded [PE22].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-20",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE32",
+          "text": "Prophylactic treatments and Allergic tests.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE21",
+          "text": "Preventative dental examinations, prophylaxis treatment, dentures, false teeth, dental implants and/or orthodontic treatment.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Are routine allergy tests covered for children under KIDO?",
+      "answer": "No. Prophylactic treatments and allergic tests are explicitly listed as general exclusions [PE32].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-21",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE27",
+          "text": "Medication, drugs, and dressings which are not recognized by the National Drug Authority of Uganda or are available without prescription from a medical practitioner, specialist/consultant, registered nurse, or therapist.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 6.6.1",
+          "text": "Where necessary and when the treating Medical Practitioner does not have the prescribed medicines, the Hospital/clinic shall provide a prescription to the Insured to procure such medicines from a Pharmacy registered with the Company.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Will KIDO pay for medicines that are not approved by the National Drug Authority of Uganda?",
+      "answer": "No. Medications, drugs, and dressings not recognized by the National Drug Authority of Uganda are excluded [PE27].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-22",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE19",
+          "text": "Sunglasses and Plano lenses.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Section 8(F)",
+          "text": "The frames shall be limited to one pair for every two years (2).",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Does the optical benefit pay for non-prescription sunglasses or Plano lenses?",
+      "answer": "No. Sunglasses and Plano lenses are general exclusions under the policy [PE19].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-23",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE25",
+          "text": "Charges or fees incurred for the completion of medical claim forms and any provider registration fees and medical report charges unless requested by the Company.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.11",
+          "text": "Claim form: means a document issued by the Company which shall be used by the Provider and Insured member to set out information in respect of the Claim incurred.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Will KIDO reimburse doctor fees charged for completing a medical claim form?",
+      "answer": "No. Fees incurred for completing medical claim forms, provider registration fees, and medical report charges are excluded unless requested by the Company [PE25].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-24",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "Exclusions of Covid-19 Cover (1)",
+          "text": "Costs of quarantine and mandatory Covid-19 tests for non-positive cases.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Exclusions of Covid-19 Cover (2)",
+          "text": "Self-lab-requests are not covered.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Are mandatory Covid-19 quarantine costs covered if the child tests negative?",
+      "answer": "No. Costs of quarantine and mandatory Covid-19 tests for non-positive cases are specifically excluded [Exclusions of Covid-19 Cover (1)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-25",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE7",
+          "text": "The release of weapon(s) of mass destruction (nuclear, biological, or chemical) whether such involves an explosive sequence(s) or not.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE8",
+          "text": "Contamination from chemical, biological, and nuclear materials, including waste products from the combustion of nuclear fuel.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE6",
+          "text": "Medical conditions sustained by military, naval or air force personnel resulting from participation in any military, naval or air force operation...",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Are injuries resulting from nuclear or chemical contamination covered?",
+      "answer": "No. Contamination from chemical, biological, or nuclear materials, as well as the release of weapons of mass destruction, are excluded [PE7, PE8].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-26",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "not_stated",
+      "review_status": "draft_needs_human_review",
+      "answerable": false,
+      "memory": {},
+      "clauses": [],
+      "question": "Are injuries sustained from riding an e-scooter specifically excluded under KIDO?",
+      "answer": "The provided policy information does not state whether e-scooter injuries are specifically excluded. Please check with the insurer.",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-27",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE3",
+          "text": "Experimental or unproven treatment unless the Company has given specific pre-authorization.",
+          "role": "supporting",
+          "source_page": 34
+        }
+      ],
+      "question": "Is experimental gene-editing therapy for sickle cell anemia covered?",
+      "answer": "The policy does not specifically mention gene-editing therapy for sickle cell anemia. It says experimental or unproven treatment is excluded unless the Company gives specific pre-authorization [PE3].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-28",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE5",
+          "text": "Injury or Illness caused by, contributed to, or resulting from self-infliction, or willful exposure to danger.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE4",
+          "text": "Participation in hazardous sports or activities such as motor racing, skydiving, paragliding...",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Are treatments for intentional self-inflicted injuries covered under KIDO?",
+      "answer": "No. Injuries or illnesses caused by or resulting from self-infliction or willful exposure to danger are excluded [PE5].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-29",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE31",
+          "text": "Permanent family planning methods such as tubal ligation, vasectomy, or the reversal of such procedures.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE30",
+          "text": "Infertility treatments, in-vitro fertilization (IVF), surrogate parenting, or any form of assisted reproduction.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Is the procedure to reverse a tubal ligation or vasectomy covered?",
+      "answer": "No. Permanent family planning methods and the reversal of such procedures are strictly excluded [PE31].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-30",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE35",
+          "text": "All costs relating to interest charged and legal fees arising out of overdue medical expenses.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE36",
+          "text": "Any costs incurred in the pursuit of any legal action against us.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Will KIDO pay for interest charges or legal fees caused by overdue medical bills?",
+      "answer": "No. Costs relating to interest charged and legal fees arising out of overdue medical expenses are excluded [PE35].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-31",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE12",
+          "text": "Cosmetic, reconstructive, or remedial disorders, whether or not for psychological reasons, and/or any complications arising thereafter including and not limited to removal of fat from any part of the body.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "PE18",
+          "text": "Treatment of varicose veins and telangiectasias (spider veins) unless medically necessary.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Is elective cosmetic surgery covered if performed for psychological reasons?",
+      "answer": "No. Cosmetic, reconstructive, or remedial treatments—whether or not performed for psychological reasons—are excluded [PE12].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-EXCL-32",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "PE3",
+          "text": "Experimental or unproven treatment unless the Company has given specific pre-authorization.",
+          "role": "supporting",
+          "source_page": 34
+        }
+      ],
+      "question": "Does the KIDO policy cover experimental stem cell therapy?",
+      "answer": "The policy does not specifically mention stem cell therapy. It says experimental or unproven treatment is excluded unless the Company gives specific pre-authorization [PE3].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-ENT-01",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "entity_relationship",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "Clause 2.19",
+          "text": "Dependent: means the Insured member's spouse, children, adopted children and stepchildren who are eligible for coverage according to the Eligibility conditions set forth in this Policy.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.61",
+          "text": "Insured member: means a subscriber of the KIDO or any member of a legally established organization or association (e.g. association, union and the like) who has fulfilled the Eligibility conditions and is named in the Policy schedule and on a Membership card.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.40",
+          "text": "KIDO: means the applicant for the insurance coverage, acting in the name of the Insured member and their dependents...",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "What is the policy distinction between an Insured Member and a Dependent?",
+      "answer": "An Insured Member is a subscriber of KIDO who has met eligibility conditions and is named in the schedule [Clause 2.61]. A Dependent refers specifically to the Insured Member's eligible spouse, children, stepchildren, or adopted children [Clause 2.19].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-ENT-02",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "entity_relationship",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "Clause 3.5(iii)",
+          "text": "A Dependent eligible to participate as a Insured member under this Policy shall not be a dependent for the purpose of this Policy.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.19",
+          "text": "Dependent: means the Insured member's spouse, children, adopted children and stepchildren who are eligible for coverage according to the Eligibility conditions set forth in this Policy.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Can a person who is eligible to participate as an Insured Member also be covered as a Dependent?",
+      "answer": "No. The policy rules state that any person eligible to participate as an Insured Member cannot be considered a dependent under the policy [Clause 3.5(iii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-ENT-03",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "entity_relationship",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "Clause 3.21(ii)(c)",
+          "text": "Cover in respect of Insured members shall terminate immediately on the first of the following events: When the Insured member ceases to be a subscriber of KIDO (in such an event, the Insured's Dependents will also cease to be covered under this Policy);",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 3.21(ii)(b)",
+          "text": "When a Dependent cease to be the Spouse of the Insured member;",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "What happens to a child's dependent coverage if the parent stops being a KIDO subscriber?",
+      "answer": "If an Insured Member ceases to be a KIDO subscriber, coverage for all of their Dependents terminates immediately [Clause 3.21(ii)(c)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-ENT-04",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "entity_relationship",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "Clause 1.3",
+          "text": "The Insured member shall be the paid-up subscribers of the Kingdom Development Organ (hereinafter referred to as \"the subscribers or insured member\") under the Trustees of the Church of Uganda and their dependants.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 1.8 b(iii)",
+          "text": "To pay the subscription fees of KIDO as per the requirements of the organ before joining this insurance scheme",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 1.1",
+          "text": "This Master Policy is a contract of insurance between Prudential Assurance Uganda Limited (hereinafter referred to as \"the Company or PAUL\") and THE REGISTERED TRUSTEES OF CHURCH OF UGANDA...",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Must a parent be a paid-up KIDO subscriber before enrolling their children?",
+      "answer": "Yes. Insured members must be paid-up subscribers of KIDO and pay KIDO subscription fees before joining the insurance scheme [Clause 1.3, Clause 1.8 b(iii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-ENT-05",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "entity_relationship",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "Clause 1.5",
+          "text": "Each insured life under this policy shall be issued a Membership card for their sole use. No other individual whether insured or not shall use another individual's membership card.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.45",
+          "text": "Membership card: means a personalized card issued by the Company in the name of each Insured member, identifying him as an Insured member...",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Can a parent use their own membership card to access treatment for their insured child?",
+      "answer": "No. Every insured life is issued a membership card for their sole use, and no individual may use another person's card [Clause 1.5].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-ENT-06",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "entity_relationship",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "Clause 3.30",
+          "text": "The Company and the KIDO are the only parties to this Policy. Insured members will have no right to enforce this Policy or any part of it.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 1.1",
+          "text": "This Master Policy is a contract of insurance between Prudential Assurance Uganda Limited... and THE REGISTERED TRUSTEES OF CHURCH OF UGANDA implementing a Kingdom Development Organ - KIDO programme...",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Does an individual insured parent or child have legal rights to enforce the master policy contract?",
+      "answer": "No. Prudential and KIDO are the only contracting parties, and insured members have no right to enforce the policy [Clause 3.30].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": [
+        "check_relevance_to_research_scope"
+      ]
+    },
+    {
+      "id": "KIDO-ENT-07",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "entity_relationship",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "Clause 3.6(ii)",
+          "text": "Dependents: Insured member's Dependents are eligible for coverage upon payment of premium by the insured member for the dependant. The Company may require an explanation and proof of dependency in cases where any already existing dependent is suggested for addition after Commencement date of the medical cover.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 3.6(i)",
+          "text": "Insured member: means a subscribed member of KIDO who has fully paid their premium and incepted by the company.",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Can Prudential ask for proof of dependency when a parent adds a child after the policy commencement date?",
+      "answer": "Yes. Prudential may require an explanation and proof of dependency if an existing dependent is proposed for addition after the commencement date [Clause 3.6(ii)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-ENT-08",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "entity_relationship",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "Clause 3.24(i)",
+          "text": "In accordance with the terms of this Policy, the KIDO is liable for all Claims paid by the Company to the providers, for Insured members who use the Membership cards in a Fraudulent manner.",
+          "role": "supporting",
+          "source_page": null
+        },
+        {
+          "id": "Clause 2.31",
+          "text": "Fraud: is an intentional Act of deception by any person which has the objective of obtaining a benefit or causing loss...",
+          "role": "distractor",
+          "source_page": null
+        }
+      ],
+      "question": "Who is liable to Prudential if a member fraudulently uses a membership card for a non-covered person?",
+      "answer": "KIDO is liable to Prudential for all claims paid to providers resulting from fraudulent card use by insured members [Clause 3.24(i)].",
+      "citation_namespace": "policy_clause",
+      "curation_flags": [
+        "check_relevance_to_research_scope"
+      ]
+    },
+    {
+      "id": "KIDO-ENT-09",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "not_stated",
+      "review_status": "draft_needs_human_review",
+      "answerable": false,
+      "memory": {},
+      "clauses": [],
+      "question": "Can a legal guardian who is not a biological parent be designated as the principal member for a child?",
+      "answer": "The provided policy information does not state whether a non-parent legal guardian can be enrolled as a principal member. Please check with the insurer.",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "KIDO-ENT-10",
+      "policy_id": "PRU/MED/041206/2023",
+      "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+      "category": "not_stated",
+      "review_status": "draft_needs_human_review",
+      "answerable": false,
+      "memory": {},
+      "clauses": [],
+      "question": "Can foster children who are not legally adopted be added as dependents?",
+      "answer": "The provided policy information does not state whether foster children without legal adoption qualify as dependents. Please check with the insurer.",
+      "citation_namespace": "policy_clause",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-AGE-04",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 0,
+        "gestational_age_weeks": 38
+      },
+      "clauses": [
+        {
+          "id": "JUNIOR-P13",
+          "text": "Eligible for the main member and his/her dependents from birth (provided it is a term baby of 38 weeks) to 17 years.",
+          "role": "supporting",
+          "source_page": 13
+        },
+        {
+          "id": "JUNIOR-P4",
+          "text": "Children are the most important little people in our lives... stand-alone cover for children aged 0 - 17 years",
+          "role": "distractor",
+          "source_page": 4
+        }
+      ],
+      "question": "What is the minimum gestational age requirement for a newborn to be eligible from birth under J-Care Junior?",
+      "answer": "To be eligible from birth, a newborn must be a term baby born at 38 weeks [JUNIOR-P13].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": [
+        "check_for_near_duplicate"
+      ]
+    },
+    {
+      "id": "JUNIOR-AGE-05",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 0,
+        "gestational_age_weeks": 35
+      },
+      "clauses": [
+        {
+          "id": "JUNIOR-P13",
+          "text": "Eligible for the main member and his/her dependents from birth (provided it is a term baby of 38 weeks) to 17 years.",
+          "role": "supporting",
+          "source_page": 13
+        },
+        {
+          "id": "JUNIOR-P13",
+          "text": "General waiting period of 30 days for new entrants on illness claims. No waiting period for accident-related treatment.",
+          "role": "distractor",
+          "source_page": 13
+        }
+      ],
+      "question": "Can a premature baby born at 35 weeks be enrolled from birth according to the brochure?",
+      "answer": "No. The brochure states that entry from birth requires the baby to be a term baby of 38 weeks [JUNIOR-P13].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-AGE-06",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 17
+      },
+      "clauses": [
+        {
+          "id": "JUNIOR-P4",
+          "text": "stand-alone cover for children aged 0 - 17 years with great benefits that will cater to their health needs.",
+          "role": "supporting",
+          "source_page": 4
+        },
+        {
+          "id": "JUNIOR-P13",
+          "text": "Eligible for the main member and his/her dependents from birth (provided it is a term baby of 38 weeks) to 17 years.",
+          "role": "supporting",
+          "source_page": 13
+        },
+        {
+          "id": "JUNIOR-P13",
+          "text": "Premium will be based on the age of the applicant.",
+          "role": "distractor",
+          "source_page": 13
+        }
+      ],
+      "question": "What is the upper age limit for a child covered under J-Care Junior?",
+      "answer": "The upper age limit listed in the brochure is 17 years of age [JUNIOR-P4, JUNIOR-P13].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": [
+        "check_for_near_duplicate"
+      ]
+    },
+    {
+      "id": "JUNIOR-AGE-07",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P13",
+          "text": "Premium will be based on the age of the applicant.",
+          "role": "supporting",
+          "source_page": 13
+        },
+        {
+          "id": "JUNIOR-P13",
+          "text": "All applications including Continuous transfer applications are subject to medical underwriting and acceptance.",
+          "role": "distractor",
+          "source_page": 13
+        }
+      ],
+      "question": "Does age affect the premium pricing for J-Care Junior?",
+      "answer": "Yes. The brochure specifies that the premium is based on the age of the applicant [JUNIOR-P13].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": [
+        "check_relevance_to_research_scope"
+      ]
+    },
+    {
+      "id": "JUNIOR-AGE-08",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 7
+      },
+      "clauses": [
+        {
+          "id": "JUNIOR-P7",
+          "text": "Lodger fees for parent accompanying sick child member: Covered for child under 10 years",
+          "role": "supporting",
+          "source_page": 7
+        },
+        {
+          "id": "JUNIOR-P7",
+          "text": "Inpatient MRI/CT Scans and PET Scans (subject to pre authorisation): Covered",
+          "role": "distractor",
+          "source_page": 7
+        }
+      ],
+      "question": "Up to what age is parent lodger accommodation covered when a child is hospitalized under J-Care Junior?",
+      "answer": "Parent lodger fees are covered for a parent accompanying a sick child member under 10 years of age [JUNIOR-P7].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": [
+        "check_relevance_to_research_scope"
+      ]
+    },
+    {
+      "id": "JUNIOR-AGE-09",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "age_eligibility",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {
+        "child_age": 12
+      },
+      "clauses": [
+        {
+          "id": "JUNIOR-P7",
+          "text": "Lodger fees for parent accompanying sick child member: Covered for child under 10 years",
+          "role": "supporting",
+          "source_page": 7
+        },
+        {
+          "id": "JUNIOR-P7",
+          "text": "Bed Limits per day. NHIF rebate will be applied on the limits shown",
+          "role": "distractor",
+          "source_page": 7
+        }
+      ],
+      "question": "Will J-Care Junior pay lodger fees for a parent staying with a 12-year-old child in hospital?",
+      "answer": "No. The brochure specifies that parent lodger fees are only covered for children under 10 years of age [JUNIOR-P7].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": [
+        "check_relevance_to_research_scope"
+      ]
+    },
+    {
+      "id": "JUNIOR-EXCL-06",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Alternative treatment such as herbal, acupuncture treatment, chiropractors etc.",
+          "role": "supporting",
+          "source_page": 14
+        },
+        {
+          "id": "JUNIOR-P14",
+          "text": "Beauty treatment or massage, stays in sanatoria, old age homes, places of rest etc.",
+          "role": "distractor",
+          "source_page": 14
+        }
+      ],
+      "question": "Does J-Care Junior cover alternative treatments like acupuncture or chiropractic care?",
+      "answer": "No. The brochure lists alternative treatments, including acupuncture, herbal care, and chiropractic treatment, under general exclusions [JUNIOR-P14].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-07",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Intentional self-injury while sane or insane, suicide or attempted suicide, treatment of acute or chronic alcoholism and drug addiction.",
+          "role": "supporting",
+          "source_page": 14
+        },
+        {
+          "id": "JUNIOR-P14",
+          "text": "Treatment for consumption of alcohol, drugs, intoxication, dependency on or abuse of alcohol, drugs or any other substance abuse, complications, injury or illness arising directly or indirectly thereof.",
+          "role": "supporting",
+          "source_page": 14
+        },
+        {
+          "id": "JUNIOR-P14",
+          "text": "Genetic disorders, genetic testing and related conditions.",
+          "role": "distractor",
+          "source_page": 14
+        }
+      ],
+      "question": "Are treatments for drug addiction or alcohol dependency covered by J-Care Junior?",
+      "answer": "No. The brochure excludes treatment for alcoholism, drug addiction, intentional self-injury, and all illnesses or injuries arising from substance abuse [JUNIOR-P14].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-08",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Treatment required because of non-compliance, failure or refusal to comply with medical advice.",
+          "role": "supporting",
+          "source_page": 14
+        },
+        {
+          "id": "JUNIOR-P14",
+          "text": "Expenses recoverable under any other insurance such as NHIF, Workmen's Compensation, Personal Accident among others.",
+          "role": "distractor",
+          "source_page": 14
+        }
+      ],
+      "question": "If a health condition worsens because medical advice was ignored, will J-Care Junior cover the treatment?",
+      "answer": "No. Expenses resulting from non-compliance or refusal to comply with medical advice are excluded [JUNIOR-P14].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-09",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Expenses recoverable under any other insurance such as NHIF, Workmen's Compensation, Personal Accident among others.",
+          "role": "supporting",
+          "source_page": 14
+        },
+        {
+          "id": "JUNIOR-P13",
+          "text": "All inpatient hospital bills shall be paid net of all National Hospital Insurance Fund (NHIF) rebates.",
+          "role": "distractor",
+          "source_page": 13
+        }
+      ],
+      "question": "Does J-Care Junior cover medical expenses that can be recovered from another insurance scheme?",
+      "answer": "No. The brochure excludes expenses that are recoverable under another insurance cover, such as NHIF, Personal Accident, or Workmen's Compensation [JUNIOR-P14].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-10",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Epidemics, pandemics, or unknown diseases except for COVID-19 up to the indicated limits.",
+          "role": "supporting",
+          "source_page": 14
+        },
+        {
+          "id": "JUNIOR-P6",
+          "text": "COVID- 19 Coverage: Pre-existing and/or chronic conditions...",
+          "role": "distractor",
+          "source_page": 6
+        }
+      ],
+      "question": "Are epidemic or pandemic diseases covered under J-Care Junior?",
+      "answer": "No. Epidemics, pandemics, and unknown diseases are excluded, except for COVID-19 up to specified plan limits [JUNIOR-P14].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-11",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Navel, Military or air force operations, injury or illness resulting from insurrection, war, civil commotion or an act of terrorism, whether declared or undeclared or as a result of participation in riot and/or strikes.",
+          "role": "supporting",
+          "source_page": 14
+        },
+        {
+          "id": "JUNIOR-P14",
+          "text": "Transportation other than a licensed ambulance, as provided for under the inpatient coverage of this contract.",
+          "role": "distractor",
+          "source_page": 14
+        }
+      ],
+      "question": "Are injuries sustained during a public riot or strike covered by J-Care Junior?",
+      "answer": "No. Injuries or illnesses resulting from riots, strikes, war, acts of terrorism, or military operations are excluded [JUNIOR-P14].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-12",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Beauty treatment or massage, stays in sanatoria, old age homes, places of rest etc.",
+          "role": "supporting",
+          "source_page": 14
+        },
+        {
+          "id": "JUNIOR-P14",
+          "text": "Cosmetic or plastic surgery unless necessitated by an accidental injury that occurs while the insured is covered under this contract.",
+          "role": "distractor",
+          "source_page": 14
+        }
+      ],
+      "question": "Are therapeutic massage treatments or stays in rest homes covered?",
+      "answer": "No. Beauty treatment, massages, and stays in places of rest, sanatoria, or old age homes are excluded [JUNIOR-P14].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-13",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Transportation other than a licensed ambulance, as provided for under the inpatient coverage of this contract.",
+          "role": "supporting",
+          "source_page": 14
+        },
+        {
+          "id": "JUNIOR-P9",
+          "text": "Medically necessary local road ambulance leading to admission in hospital: Covered",
+          "role": "distractor",
+          "source_page": 9
+        }
+      ],
+      "question": "Will J-Care Junior reimburse private taxi transport to a hospital?",
+      "answer": "No. Transportation other than a licensed ambulance provided under inpatient cover is explicitly excluded [JUNIOR-P14].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-14",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Peri-Menopause Menopause, andropause, hormone replacement therapy, age, and puberty related treatment.",
+          "role": "supporting",
+          "source_page": 14
+        },
+        {
+          "id": "JUNIOR-P14",
+          "text": "Fertility treatment e.g. costs of treatment related to infertility and impotence...",
+          "role": "distractor",
+          "source_page": 14
+        }
+      ],
+      "question": "Are puberty-related treatments covered under the J-Care Junior brochure?",
+      "answer": "No. The brochure lists puberty-related treatments, hormone replacement therapy, and menopause/andropause care under general exclusions [JUNIOR-P14].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-15",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Fertility treatment e.g. costs of treatment related to infertility and impotence, any injury, illness or disease specified as an exclusion and complications caused by a condition that is excluded.",
+          "role": "supporting",
+          "source_page": 14
+        },
+        {
+          "id": "JUNIOR-P14",
+          "text": "Genetic disorders, genetic testing and related conditions.",
+          "role": "distractor",
+          "source_page": 14
+        }
+      ],
+      "question": "Does J-Care Junior cover complications resulting from an excluded medical condition?",
+      "answer": "No. The brochure states that complications caused by any excluded condition or disease are also excluded [JUNIOR-P14].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-16",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "not_stated",
+      "review_status": "draft_needs_human_review",
+      "answerable": false,
+      "memory": {},
+      "clauses": [],
+      "question": "Does J-Care Junior cover hearing aid replacement if stolen?",
+      "answer": "The provided policy information does not state whether replacement for stolen hearing aids is covered. Please check with the insurer.",
+      "citation_namespace": "brochure_page",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-17",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "not_stated",
+      "review_status": "draft_needs_human_review",
+      "answerable": false,
+      "memory": {},
+      "clauses": [],
+      "question": "Are routine school sports injuries subject to a co-payment in J-Care Junior?",
+      "answer": "The provided policy information does not state whether routine school sports injuries require a co-payment. Please check with the insurer.",
+      "citation_namespace": "brochure_page",
+      "curation_flags": []
+    },
+    {
+      "id": "JUNIOR-EXCL-18",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Genetic disorders, genetic testing and related conditions.",
+          "role": "supporting",
+          "source_page": 14
+        },
+        {
+          "id": "JUNIOR-P14",
+          "text": "Congenital defects or genetic conditions.",
+          "role": "distractor",
+          "source_page": 14
+        }
+      ],
+      "question": "Is genetic testing covered under J-Care Junior?",
+      "answer": "No. Genetic disorders, genetic testing, and related conditions are general exclusions listed in the brochure [JUNIOR-P14].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": [
+        "check_for_near_duplicate"
+      ]
+    },
+    {
+      "id": "JUNIOR-EXCL-19",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "exclusion",
+      "review_status": "draft_needs_human_review",
+      "answerable": true,
+      "memory": {},
+      "clauses": [
+        {
+          "id": "JUNIOR-P14",
+          "text": "Cosmetic or plastic surgery unless necessitated by an accidental injury that occurs while the insured is covered under this contract.",
+          "role": "supporting",
+          "source_page": 14
+        },
+        {
+          "id": "JUNIOR-P14",
+          "text": "Beauty treatment or massage, stays in sanatoria, old age homes, places of rest etc.",
+          "role": "distractor",
+          "source_page": 14
+        }
+      ],
+      "question": "Is plastic surgery covered if it is required due to an accidental injury occurring while insured?",
+      "answer": "Yes. Cosmetic or plastic surgery is excluded unless it is necessitated by an accidental injury occurring while covered under the contract [JUNIOR-P14].",
+      "citation_namespace": "brochure_page",
+      "curation_flags": [
+        "check_for_near_duplicate"
+      ]
+    },
+    {
+      "id": "JUNIOR-EXCL-20",
+      "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+      "source_file": "J-Care-Junior-Brochure.pdf",
+      "category": "not_stated",
+      "review_status": "draft_needs_human_review",
+      "answerable": false,
+      "memory": {},
+      "clauses": [],
+      "question": "Does J-Care Junior cover experimental organ transplant procedures?",
+      "answer": "The provided policy information does not state whether experimental organ transplant procedures are covered or excluded. Please check with the insurer.",
+      "citation_namespace": "brochure_page",
+      "curation_flags": []
+    }
+  ]
+}

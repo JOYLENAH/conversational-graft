@@ -1,0 +1,369 @@
+[
+  {
+    "id": "KIDO-EXCL-08",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE23", "text": "Children's food, baby supplies, vitamin, mineral or organic supplements, de-wormers, products that can be purchased without a doctor's prescription such as, but not limited to, mouthwash, toothpaste, antiseptic lozenges or sprays, shampoo, sunscreen, etc.", "role": "supporting", "source_page": null},
+      {"id": "PE15", "text": "*Vaccinations.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Does KIDO cover baby formula and food supplies for young children?",
+    "answer": "No. Children's food, baby supplies, and nutritional supplements are explicitly excluded under the policy [PE23]."
+  },
+  {
+    "id": "KIDO-EXCL-09",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE23", "text": "Children's food, baby supplies, vitamin, mineral or organic supplements, de-wormers, products that can be purchased without a doctor's prescription such as, but not limited to, mouthwash, toothpaste, antiseptic lozenges or sprays, shampoo, sunscreen, etc.", "role": "supporting", "source_page": null},
+      {"id": "Clause 6.6.1", "text": "Where necessary and when the treating Medical Practitioner does not have the prescribed medicines, the Hospital/clinic shall provide a prescription to the Insured to procure such medicines from a Pharmacy registered with the Company.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Are over-the-counter de-wormers or vitamin supplements covered for children?",
+    "answer": "No. De-wormers, vitamin, mineral, and organic supplements, as well as over-the-counter products, are excluded [PE23]."
+  },
+  {
+    "id": "KIDO-EXCL-10",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE11", "text": "Learning difficulties and/or disorders, developmental disorders, and speech/or voice problems.", "role": "supporting", "source_page": null},
+      {"id": "PE12", "text": "Cosmetic, reconstructive, or remedial disorders, whether or not for psychological reasons, and/or any complications arising thereafter including and not limited to removal of fat from any part of the body...", "role": "distractor", "source_page": null}
+    ],
+    "question": "Is speech therapy for a developmental learning disorder covered under KIDO?",
+    "answer": "No. Learning difficulties, developmental disorders, and speech or voice problems are general exclusions under the policy [PE11]."
+  },
+  {
+    "id": "KIDO-EXCL-11",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE14", "text": "Circumcision unless medically necessary for the treatment of disease/injury not excluded in the Policy.", "role": "supporting", "source_page": null},
+      {"id": "PE31", "text": "Permanent family planning methods such as tubal ligation, vasectomy, or the reversal of such procedures.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Is elective routine circumcision covered for a male child?",
+    "answer": "No. Circumcision is excluded unless it is medically necessary for treating a non-excluded disease or injury [PE14]."
+  },
+  {
+    "id": "KIDO-EXCL-12",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE24", "text": "*Supplying, maintaining, or fitting any external prostheses or appliances, rental or purchase of crutches, wheelchairs, or other equipment, medical or otherwise. The Company will pay for spinal support, knee brace, collar brace, etc. if it is part of a surgical operation and/or integral to the treatment of a covered medical condition.", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.28", "text": "External Prosthesis: An artificial device that replaces a missing body part, which may be lost/absent through trauma, disease, or congenital conditions such as a prosthetic limb, ear which is required at time of a surgical procedure.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Are wheelchair rentals or crutches covered for a child recovering from a broken leg?",
+    "answer": "No. Renting or purchasing wheelchairs, crutches, or external equipment is excluded, though specific braces like knee or collar braces are covered if integral to a surgical operation for a covered condition [PE24]."
+  },
+  {
+    "id": "KIDO-EXCL-13",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE9", "text": "Treatment by chiropractors, acupuncturists, and herbalists, stays and/or maintenance or treatment received in nature cure clinics or similar establishments or private beds registered within a nursing home, sanatoria, convalescent and/or rest homes or 'cures' attached to such establishments.", "role": "supporting", "source_page": null},
+      {"id": "PE17", "text": "Treatment in any quarantine/isolation or rest home, spa, hydro-clinic, health resort, massage center and chiropractic treatment, sanatorium or long-term care facility that is not a hospital.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Will KIDO cover herbal medicine or chiropractic treatments for my child?",
+    "answer": "No. Treatment by chiropractors, acupuncturists, and herbalists is strictly excluded [PE9]."
+  },
+  {
+    "id": "KIDO-EXCL-14",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE28", "text": "Treatment as a result of proven medical negligence or malpractice.", "role": "supporting", "source_page": null},
+      {"id": "PE36", "text": "Any costs incurred in the pursuit of any legal action against us.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Does the policy pay for medical treatments required because of proven medical malpractice?",
+    "answer": "No. Treatment required as a result of proven medical negligence or malpractice is excluded [PE28]."
+  },
+  {
+    "id": "KIDO-EXCL-15",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE34", "text": "All costs relating to appointments not kept or cancelled by the Insured or Insured dependents.", "role": "supporting", "source_page": null},
+      {"id": "PE35", "text": "All costs relating to interest charged and legal fees arising out of overdue medical expenses.", "role": "distractor", "source_page": null}
+    ],
+    "question": "If I miss a scheduled doctor's appointment for my child, will KIDO cover the cancellation fee?",
+    "answer": "No. All costs relating to missed or cancelled appointments are excluded [PE34]."
+  },
+  {
+    "id": "KIDO-EXCL-16",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE1", "text": "Abuse of alcohol, drug, any other intoxicating substance, or any addictive condition of any kind and any medical condition arising directly or indirectly from any such abuse or addiction not limited to Admissions for rehabilitation.", "role": "supporting", "source_page": null},
+      {"id": "PE5", "text": "Injury or Illness caused by, contributed to, or resulting from self-infliction, or willful exposure to danger.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Are rehabilitation admissions for drug abuse covered under KIDO?",
+    "answer": "No. Medical conditions arising directly or indirectly from drug or alcohol abuse, including admissions for rehabilitation, are excluded [PE1]."
+  },
+  {
+    "id": "KIDO-EXCL-17",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE29", "text": "Medical certificates and examinations for residence, employment, or travel.", "role": "supporting", "source_page": null},
+      {"id": "PE13", "text": "Routine medical examinations and regular check-ups, unless explicitly included as part of the scheme agreed by the member's employer.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Will KIDO pay for a medical examination required for my child's travel visa?",
+    "answer": "No. Medical certificates and examinations for residence, employment, or travel are excluded [PE29]."
+  },
+  {
+    "id": "KIDO-EXCL-18",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE33", "text": "All transportation costs occurring during trips specifically made for the purpose of obtaining Treatment, any other non-medical items that are not required for treatment will not be catered for by the Company e.g. phone calls, DVDs, airtime, internet, newspapers, diapers.", "role": "supporting", "source_page": null},
+      {"id": "Section 8(A)(v)", "text": "Ambulance services for transportation of a sick Member for eligible inpatient treatment from an area where facilities for adequate care do not exist to the nearest suitable hospital or licensed medical facility will be covered within the annual inpatient limit.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Are non-medical expenses like hospital diapers or travel costs for treatment covered?",
+    "answer": "No. Transportation costs for trips specifically made to obtain treatment and non-medical items such as diapers, internet, or phone calls are excluded [PE33]."
+  },
+  {
+    "id": "KIDO-EXCL-19",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE22", "text": "Obesity, special diet, or weight control, compulsive or addictive eating disorders and/or homesickness.", "role": "supporting", "source_page": null},
+      {"id": "PE23", "text": "Children's food, baby supplies, vitamin, mineral or organic supplements, de-wormers...", "role": "distractor", "source_page": null}
+    ],
+    "question": "Does KIDO cover treatment for eating disorders or prescribed special dietary regimes?",
+    "answer": "No. Special diets, obesity treatment, weight control, compulsive/addictive eating disorders, and homesickness are excluded [PE22]."
+  },
+  {
+    "id": "KIDO-EXCL-20",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE32", "text": "Prophylactic treatments and Allergic tests.", "role": "supporting", "source_page": null},
+      {"id": "PE21", "text": "Preventative dental examinations, prophylaxis treatment, dentures, false teeth, dental implants and/or orthodontic treatment.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Are routine allergy tests covered for children under KIDO?",
+    "answer": "No. Prophylactic treatments and allergic tests are explicitly listed as general exclusions [PE32]."
+  },
+  {
+    "id": "KIDO-EXCL-21",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE27", "text": "Medication, drugs, and dressings which are not recognized by the National Drug Authority of Uganda or are available without prescription from a medical practitioner, specialist/consultant, registered nurse, or therapist.", "role": "supporting", "source_page": null},
+      {"id": "Clause 6.6.1", "text": "Where necessary and when the treating Medical Practitioner does not have the prescribed medicines, the Hospital/clinic shall provide a prescription to the Insured to procure such medicines from a Pharmacy registered with the Company.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Will KIDO pay for medicines that are not approved by the National Drug Authority of Uganda?",
+    "answer": "No. Medications, drugs, and dressings not recognized by the National Drug Authority of Uganda are excluded [PE27]."
+  },
+  {
+    "id": "KIDO-EXCL-22",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE19", "text": "Sunglasses and Plano lenses.", "role": "supporting", "source_page": null},
+      {"id": "Section 8(F)", "text": "The frames shall be limited to one pair for every two years (2).", "role": "distractor", "source_page": null}
+    ],
+    "question": "Does the optical benefit pay for non-prescription sunglasses or Plano lenses?",
+    "answer": "No. Sunglasses and Plano lenses are general exclusions under the policy [PE19]."
+  },
+  {
+    "id": "KIDO-EXCL-23",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE25", "text": "Charges or fees incurred for the completion of medical claim forms and any provider registration fees and medical report charges unless requested by the Company.", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.11", "text": "Claim form: means a document issued by the Company which shall be used by the Provider and Insured member to set out information in respect of the Claim incurred.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Will KIDO reimburse doctor fees charged for completing a medical claim form?",
+    "answer": "No. Fees incurred for completing medical claim forms, provider registration fees, and medical report charges are excluded unless requested by the Company [PE25]."
+  },
+  {
+    "id": "KIDO-EXCL-24",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "Exclusions of Covid-19 Cover (1)", "text": "Costs of quarantine and mandatory Covid-19 tests for non-positive cases.", "role": "supporting", "source_page": null},
+      {"id": "Exclusions of Covid-19 Cover (2)", "text": "Self-lab-requests are not covered.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Are mandatory Covid-19 quarantine costs covered if the child tests negative?",
+    "answer": "No. Costs of quarantine and mandatory Covid-19 tests for non-positive cases are specifically excluded [Exclusions of Covid-19 Cover (1)]."
+  },
+  {
+    "id": "KIDO-EXCL-25",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE7", "text": "The release of weapon(s) of mass destruction (nuclear, biological, or chemical) whether such involves an explosive sequence(s) or not.", "role": "supporting", "source_page": null},
+      {"id": "PE8", "text": "Contamination from chemical, biological, and nuclear materials, including waste products from the combustion of nuclear fuel.", "role": "supporting", "source_page": null},
+      {"id": "PE6", "text": "Medical conditions sustained by military, naval or air force personnel resulting from participation in any military, naval or air force operation...", "role": "distractor", "source_page": null}
+    ],
+    "question": "Are injuries resulting from nuclear or chemical contamination covered?",
+    "answer": "No. Contamination from chemical, biological, or nuclear materials, as well as the release of weapons of mass destruction, are excluded [PE7, PE8]."
+  },
+  {
+    "id": "KIDO-EXCL-26",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "not_stated",
+    "review_status": "draft_needs_human_review",
+    "answerable": false,
+    "memory": {},
+    "clauses": [],
+    "question": "Are injuries sustained from riding an e-scooter specifically excluded under KIDO?",
+    "answer": "The provided policy information does not state whether e-scooter injuries are specifically excluded. Please check with the insurer."
+  },
+  {
+    "id": "KIDO-EXCL-27",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "not_stated",
+    "review_status": "draft_needs_human_review",
+    "answerable": false,
+    "memory": {},
+    "clauses": [],
+    "question": "Is experimental gene editing therapy for sickle cell anemia explicitly covered or excluded?",
+    "answer": "The provided policy information does not state whether gene editing therapy for sickle cell anemia is covered or excluded. Please check with the insurer."
+  },
+  {
+    "id": "KIDO-EXCL-28",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE5", "text": "Injury or Illness caused by, contributed to, or resulting from self-infliction, or willful exposure to danger.", "role": "supporting", "source_page": null},
+      {"id": "PE4", "text": "Participation in hazardous sports or activities such as motor racing, skydiving, paragliding...", "role": "distractor", "source_page": null}
+    ],
+    "question": "Are treatments for intentional self-inflicted injuries covered under KIDO?",
+    "answer": "No. Injuries or illnesses caused by or resulting from self-infliction or willful exposure to danger are excluded [PE5]."
+  },
+  {
+    "id": "KIDO-EXCL-29",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE31", "text": "Permanent family planning methods such as tubal ligation, vasectomy, or the reversal of such procedures.", "role": "supporting", "source_page": null},
+      {"id": "PE30", "text": "Infertility treatments, in-vitro fertilization (IVF), surrogate parenting, or any form of assisted reproduction.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Is the procedure to reverse a tubal ligation or vasectomy covered?",
+    "answer": "No. Permanent family planning methods and the reversal of such procedures are strictly excluded [PE31]."
+  },
+  {
+    "id": "KIDO-EXCL-30",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE35", "text": "All costs relating to interest charged and legal fees arising out of overdue medical expenses.", "role": "supporting", "source_page": null},
+      {"id": "PE36", "text": "Any costs incurred in the pursuit of any legal action against us.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Will KIDO pay for interest charges or legal fees caused by overdue medical bills?",
+    "answer": "No. Costs relating to interest charged and legal fees arising out of overdue medical expenses are excluded [PE35]."
+  },
+  {
+    "id": "KIDO-EXCL-31",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "PE12", "text": "Cosmetic, reconstructive, or remedial disorders, whether or not for psychological reasons, and/or any complications arising thereafter including and not limited to removal of fat from any part of the body.", "role": "supporting", "source_page": null},
+      {"id": "PE18", "text": "Treatment of varicose veins and telangiectasias (spider veins) unless medically necessary.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Is elective cosmetic surgery covered if performed for psychological reasons?",
+    "answer": "No. Cosmetic, reconstructive, or remedial treatments—whether or not performed for psychological reasons—are excluded [PE12]."
+  },
+  {
+    "id": "KIDO-EXCL-32",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "not_stated",
+    "review_status": "draft_needs_human_review",
+    "answerable": false,
+    "memory": {},
+    "clauses": [],
+    "question": "Are experimental stem cell therapies for pediatric neurological conditions covered under KIDO?",
+    "answer": "The provided policy information does not state whether experimental stem cell therapies are covered or excluded. Please check with the insurer."
+  }
+]

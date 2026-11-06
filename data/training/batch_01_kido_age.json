@@ -1,0 +1,353 @@
+[
+  {
+    "id": "KIDO-AGE-05",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 12, "marital_status": "unmarried"},
+    "clauses": [
+      {"id": "Clause 3.5(ii)", "text": "The unmarried children, stepchildren and legally adopted children of the Insured member provided they are born term as defined by this policy and were discharged from hospital after birth up to a maximum of eighteen (18) years of age, are residing with the Insured member and are dependent upon him for support.", "role": "supporting", "source_page": null},
+      {"id": "Clause 3.5(i)", "text": "The legal spouse of the Insured member having attained the age of not more than seventy (70) years (at their first Join date) and is resident in Uganda. Coverage of an insured spouse ends on the date of divorce.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Can my unmarried 12-year-old child join the policy?",
+    "answer": "Yes, an unmarried child up to 18 years of age is eligible. However, they must be born term, discharged from the hospital after birth, reside with the insured member, and depend on them for support [Clause 3.5(ii)]."
+  },
+  {
+    "id": "KIDO-AGE-06",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 15, "marital_status": "married"},
+    "clauses": [
+      {"id": "Clause 3.5(ii)", "text": "The unmarried children, stepchildren and legally adopted children of the Insured member provided they are born term as defined by this policy and were discharged from hospital after birth up to a maximum of eighteen (18) years of age, are residing with the Insured member and are dependent upon him for support.", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.69", "text": "Term baby: a delivery of a baby at 34 weeks or more.", "role": "distractor", "source_page": null}
+    ],
+    "question": "My 15-year-old child is married. Are they eligible as a dependent?",
+    "answer": "No. The policy explicitly specifies that children must be unmarried to be eligible as dependents [Clause 3.5(ii)]."
+  },
+  {
+    "id": "KIDO-AGE-07",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 19, "is_full_time_student": false},
+    "clauses": [
+      {"id": "Clause 3.5(ii)", "text": "Children aged over eighteen (18) years shall only be eligible if they are full-time students at a school, college or university and are not aged above twenty-five (25) years of age.", "role": "supporting", "source_page": null},
+      {"id": "Clause 3.5(i)", "text": "The legal spouse of the Insured member having attained the age of not more than seventy (70) years (at their first Join date) and is resident in Uganda.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Is my 19-year-old child eligible for cover if they are not a student?",
+    "answer": "No. Children over 18 years of age are only eligible if they are full-time students at a school, college, or university [Clause 3.5(ii)]."
+  },
+  {
+    "id": "KIDO-AGE-08",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 22, "is_full_time_student": true},
+    "clauses": [
+      {"id": "Clause 3.5(ii)", "text": "Children aged over eighteen (18) years shall only be eligible if they are full-time students at a school, college or university and are not aged above twenty-five (25) years of age.", "role": "supporting", "source_page": null},
+      {"id": "Clause 3.8(iii)", "text": "A new child: Can be covered from birth or from the date an adoption is made final as the case may be, provided one or both parents are covered concurrently in the existing Policy.", "role": "distractor", "source_page": null}
+    ],
+    "question": "My 22-year-old child is enrolled full-time at university. Can they be covered?",
+    "answer": "Yes. Children over 18 are eligible up to 25 years of age provided they are full-time students at a school, college, or university [Clause 3.5(ii)]."
+  },
+  {
+    "id": "KIDO-AGE-09",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"gestational_age_weeks": 35},
+    "clauses": [
+      {"id": "Clause 2.69", "text": "Term baby: a delivery of a baby at 34 weeks or more.", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.59", "text": "Prematurity: The birth of a baby of less than 34 weeks gestational age, and before the developing organs are mature enough to allow normal postnatal survival.", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.19", "text": "Dependent: means the Insured member's spouse, children, adopted children and stepchildren who are eligible for coverage according to the Eligibility conditions set forth in this Policy.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Is a baby born at 35 weeks considered a term baby under KIDO?",
+    "answer": "Yes. The policy defines a term baby as a delivery at 34 weeks or more, whereas prematurity applies to births at less than 34 weeks [Clause 2.69, Clause 2.59]."
+  },
+  {
+    "id": "KIDO-AGE-10",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"gestational_age_weeks": 31},
+    "clauses": [
+      {"id": "Clause 2.59", "text": "Prematurity: The birth of a baby of less than 34 weeks gestational age, and before the developing organs are mature enough to allow normal postnatal survival.", "role": "supporting", "source_page": null},
+      {"id": "Clause 3.5(ii)", "text": "The unmarried children, stepchildren and legally adopted children of the Insured member provided they are born term as defined by this policy and were discharged from hospital after birth up to a maximum of eighteen (18) years of age, are residing with the Insured member and are dependent upon him for support.", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.7", "text": "Birth defect: means any deformity/abnormal condition or anomaly, or disability of a person arising during the antenatal stages of pregnancy or caused by/or during childbirth.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Is a baby born at 31 weeks eligible under standard child dependent rules?",
+    "answer": "No. A baby born at 31 weeks is considered premature (less than 34 weeks), whereas standard dependent child eligibility requires the child to be born term [Clause 2.59, Clause 3.5(ii)]."
+  },
+  {
+    "id": "KIDO-AGE-11",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "Clause 3.8(iii)", "text": "A new child: Can be covered from birth or from the date an adoption is made final as the case may be, provided one or both parents are covered concurrently in the existing Policy. The Company will normally allow the KIDO to add a newborn child without submitting details of their medical history, provided they are added within three (3) months from the birth date.", "role": "supporting", "source_page": null},
+      {"id": "Clause 3.8(i)", "text": "Addition: KIDO may at any time, upon completing and sending to the Company the duly completed Proposal form (Member Application form), add a new Insured member and his Dependents or new Dependents of an existing Insured member to the Policy.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Within what timeframe must a newborn be added to avoid submitting medical history?",
+    "answer": "A newborn can normally be added without submitting details of their medical history if they are added within three (3) months from their birth date, provided one or both parents are concurrently covered [Clause 3.8(iii)]."
+  },
+  {
+    "id": "KIDO-AGE-12",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"conception_method": "assisted conception"},
+    "clauses": [
+      {"id": "Clause 3.8(iii)", "text": "However, if the child was born as a result of any method of assisted conception or if they have been adopted, KIDO will be required to submit full particulars of such child, including the child's full medical history, following which the Company will extend cover to such child provided it is satisfied that the conditions for cover have been met.", "role": "supporting", "source_page": null},
+      {"id": "Clause 3.8(iv)", "text": "Deletion: KIDO may at any time delete a Insured member and their Dependents from the Policy subject to a written request for deletion.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Are newborns conceived via assisted conception automatically covered without medical history?",
+    "answer": "No. If a child is born as a result of any method of assisted conception, full particulars including full medical history must be submitted before cover is extended [Clause 3.8(iii)]."
+  },
+  {
+    "id": "KIDO-AGE-13",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"is_adopted": true},
+    "clauses": [
+      {"id": "Clause 3.8(iii)", "text": "A new child: Can be covered from birth or from the date an adoption is made final as the case may be, provided one or both parents are covered concurrently in the existing Policy... if they have been adopted, KIDO will be required to submit full particulars of such child, including the child's full medical history, following which the Company will extend cover to such child provided it is satisfied that the conditions for cover have been met.", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.19", "text": "Dependent: means the Insured member's spouse, children, adopted children and stepchildren who are eligible for coverage according to the Eligibility conditions set forth in this Policy.", "role": "distractor", "source_page": null}
+    ],
+    "question": "When does coverage start for a legally adopted child and what details are needed?",
+    "answer": "Coverage can start from the date an adoption is made final, provided one or both parents are concurrently covered and full particulars including medical history are submitted [Clause 3.8(iii)]."
+  },
+  {
+    "id": "KIDO-AGE-14",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 7},
+    "clauses": [
+      {"id": "Section 7 (Inpatient Benefits Table)", "text": "Lodger fees for parent accompanying child below 8 years: Covered (across Platinum, Gold, Silver, Bronze, Copper, Marble).", "role": "supporting", "source_page": null},
+      {"id": "Section 8(A)(i)", "text": "The policy will cover accommodation for a parent or legal guardian accompanying a member who is below 12 years of age.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Are lodger fees covered under the standard retail package for a parent accompanying a 7-year-old child?",
+    "answer": "Yes. Under the KIDO standard retail benefit table, lodger fees are covered for a parent accompanying a child below 8 years of age [Section 7 (Inpatient Benefits Table)]."
+  },
+  {
+    "id": "KIDO-AGE-15",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 10},
+    "clauses": [
+      {"id": "Section 7 (Inpatient Benefits Table)", "text": "Lodger fees for parent accompanying child below 8 years: Covered", "role": "supporting", "source_page": null},
+      {"id": "Clause 3.5(ii)", "text": "The unmarried children, stepchildren and legally adopted children of the Insured member provided they are born term as defined by this policy and were discharged from hospital after birth up to a maximum of eighteen (18) years of age, are residing with the Insured member and are dependent upon him for support.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Does the standard retail benefit schedule cover parent lodger fees for a 10-year-old child?",
+    "answer": "No. Under the standard retail schedule, parent lodger fees are only covered for children below 8 years of age [Section 7 (Inpatient Benefits Table)]."
+  },
+  {
+    "id": "KIDO-AGE-16",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 10},
+    "clauses": [
+      {"id": "Section 7 (Inpatient Only Cover)", "text": "Lodger fees for parent accompanying child below 12 years: Covered", "role": "supporting", "source_page": null},
+      {"id": "Section 7 (Inpatient Benefits Table)", "text": "Lodger fees for parent accompanying child below 8 years: Covered", "role": "distractor", "source_page": null}
+    ],
+    "question": "Under the Inpatient Only Cover schedule, is a parent covered for staying with a 10-year-old child?",
+    "answer": "Yes. Under the specific Inpatient Only Cover schedule, lodger fees are covered for a parent accompanying a child below 12 years of age [Section 7 (Inpatient Only Cover)]."
+  },
+  {
+    "id": "KIDO-AGE-17",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 12, "treatment": "braces"},
+    "clauses": [
+      {"id": "Section 7 (Senior Citizens Cover - Dental Benefit)", "text": "Braces covered for children up to 14 years of age: covered", "role": "supporting", "source_page": null},
+      {"id": "PE21", "text": "Preventative dental examinations, prophylaxis treatment, dentures, false teeth, dental implants and/or orthodontic treatment.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Does the Senior Citizens dental benefit table cover braces for a 12-year-old child?",
+    "answer": "Yes. Under the Senior Citizens dental schedule, braces are listed as covered for children up to 14 years of age [Section 7 (Senior Citizens Cover - Dental Benefit)]."
+  },
+  {
+    "id": "KIDO-AGE-18",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 16, "treatment": "braces"},
+    "clauses": [
+      {"id": "Section 7 (Senior Citizens Cover - Dental Benefit)", "text": "Braces covered for children up to 14 years of age: covered", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.18", "text": "Dentist: means a registered or licensed dental practitioner who is legally authorized to practice dentistry by the Uganda Medical and Dental Practitioners Council.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Can a 16-year-old child get coverage for braces under the child dental provisions in the Senior Citizens schedule?",
+    "answer": "No. The provision covering braces specifically limits eligibility to children up to 14 years of age [Section 7 (Senior Citizens Cover - Dental Benefit)]."
+  },
+  {
+    "id": "KIDO-AGE-19",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 5},
+    "clauses": [
+      {"id": "Clause 2.73", "text": "UNEPI Vaccination: (United Nations Expanded Program for Immunization) shall refer to the following vaccines which are provided for free in Uganda; Polio, BCG, DPT (combined with Hepatitis B and Hemophilia Influenza B (HIB) and Measles.", "role": "supporting", "source_page": null},
+      {"id": "Section 8(D)(vi)", "text": "Other services rendered under outpatient include physiotherapy which shall be on referral basis by a Physician and vaccinations for children in accordance with the Ministry of Health Uganda National Expanded Programme for Immunisation (UNEPI).", "role": "supporting", "source_page": null},
+      {"id": "PE15", "text": "*Vaccinations.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Are standard child immunizations covered for a young child?",
+    "answer": "Yes. Outpatient cover includes child vaccinations in accordance with the Uganda National Expanded Programme for Immunisation (UNEPI), covering vaccines such as Polio, BCG, DPT, and Measles [Clause 2.73, Section 8(D)(vi)]."
+  },
+  {
+    "id": "KIDO-AGE-20",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 14, "resides_with_member": false},
+    "clauses": [
+      {"id": "Clause 3.5(ii)", "text": "The unmarried children, stepchildren and legally adopted children of the Insured member provided they are born term as defined by this policy and were discharged from hospital after birth up to a maximum of eighteen (18) years of age, are residing with the Insured member and are dependent upon him for support.", "role": "supporting", "source_page": null},
+      {"id": "Clause 3.5(i)", "text": "The legal spouse of the Insured member having attained the age of not more than seventy (70) years (at their first Join date) and is resident in Uganda.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Can my 14-year-old child be covered if they live permanently with an aunt instead of me?",
+    "answer": "No. To be eligible for coverage, dependent children must reside with the insured member and depend on them for support [Clause 3.5(ii)]."
+  },
+  {
+    "id": "KIDO-AGE-21",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 16, "financially_independent": true},
+    "clauses": [
+      {"id": "Clause 3.5(ii)", "text": "The unmarried children, stepchildren and legally adopted children of the Insured member provided they are born term as defined by this policy and were discharged from hospital after birth up to a maximum of eighteen (18) years of age, are residing with the Insured member and are dependent upon him for support.", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.61", "text": "Insured member: means a subscriber of the KIDO or any member of a legally established organization or association...", "role": "distractor", "source_page": null}
+    ],
+    "question": "My 16-year-old child has their own job and supports themselves. Are they eligible as my dependent?",
+    "answer": "No. Children under 18 must be dependent upon the insured member for support to qualify as eligible dependents [Clause 3.5(ii)]."
+  },
+  {
+    "id": "KIDO-AGE-22",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 10, "relationship": "stepchild"},
+    "clauses": [
+      {"id": "Clause 3.5(ii)", "text": "The unmarried children, stepchildren and legally adopted children of the Insured member provided they are born term as defined by this policy and were discharged from hospital after birth up to a maximum of eighteen (18) years of age, are residing with the Insured member and are dependent upon him for support.", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.19", "text": "Dependent: means the Insured member's spouse, children, adopted children and stepchildren who are eligible for coverage according to the Eligibility conditions set forth in this Policy.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Can I include my 10-year-old stepchild as a dependent on my policy?",
+    "answer": "Yes. Stepchildren are explicitly included as eligible dependents provided they meet the age, residency, and support requirements [Clause 3.5(ii)]."
+  },
+  {
+    "id": "KIDO-AGE-23",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 3},
+    "clauses": [
+      {"id": "Clause 3.8(vii)", "text": "Covered benefits arising from Accident or Illness occurring during the Policy period for the Insured member or their Dependents shall cease immediately upon his deletion from the Policy.", "role": "supporting", "source_page": null},
+      {"id": "Clause 3.8(iv)", "text": "Deletion: KIDO may at any time delete a Insured member and their Dependents from the Policy subject to: a written request for deletion...", "role": "distractor", "source_page": null}
+    ],
+    "question": "If my 3-year-old child is deleted from the policy, do benefits for an ongoing illness continue?",
+    "answer": "No. Covered benefits for a dependent cease immediately upon their deletion from the policy [Clause 3.8(vii)]."
+  },
+  {
+    "id": "KIDO-AGE-24",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 18},
+    "clauses": [
+      {"id": "Clause 3.21(ii)(d)", "text": "Cover in respect of Insured members shall terminate immediately on the first of the following events: On the day before the Insured member attains the age limits defined above.", "role": "supporting", "source_page": null},
+      {"id": "Clause 3.21(ii)(a)", "text": "On the death of the Insured member;", "role": "distractor", "source_page": null}
+    ],
+    "question": "When does dependent coverage automatically terminate when a child reaches the maximum age limit?",
+    "answer": "Coverage for an insured member or dependent terminates on the day before they attain the specified age limit [Clause 3.21(ii)(d)]."
+  },
+  {
+    "id": "KIDO-AGE-25",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "not_stated",
+    "review_status": "draft_needs_human_review",
+    "answerable": false,
+    "memory": {"child_age": 10},
+    "clauses": [],
+    "question": "Does KIDO require a birth certificate or a DNA test to confirm child eligibility?",
+    "answer": "The provided policy information does not state whether a birth certificate or DNA test is specifically required for child eligibility verification. Please check with the insurer."
+  },
+  {
+    "id": "KIDO-AGE-26",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "not_stated",
+    "review_status": "draft_needs_human_review",
+    "answerable": false,
+    "memory": {"child_age": 16},
+    "clauses": [],
+    "question": "Can a 16-year-old child be enrolled as a principal member in KIDO?",
+    "answer": "The provided policy information does not state whether a 16-year-old can enroll as a principal member. Please check with the insurer."
+  },
+  {
+    "id": "KIDO-AGE-27",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "not_stated",
+    "review_status": "draft_needs_human_review",
+    "answerable": false,
+    "memory": {"child_age": 20, "has_disability": true},
+    "clauses": [],
+    "question": "Is an unmarried 20-year-old child with a permanent disability eligible if they are not a student?",
+    "answer": "The provided policy information does not state any exception or rule for disabled adult children who are not students. Please check with the insurer."
+  },
+  {
+    "id": "KIDO-AGE-28",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "not_stated",
+    "review_status": "draft_needs_human_review",
+    "answerable": false,
+    "memory": {"child_age": 21, "student_status": "part-time"},
+    "clauses": [],
+    "question": "Can a 21-year-old part-time university student be covered as a dependent?",
+    "answer": "The provided policy information does not state whether part-time students qualify for dependent coverage. Please check with the insurer."
+  }
+]

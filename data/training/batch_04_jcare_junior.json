@@ -1,0 +1,310 @@
+[
+  {
+    "id": "JUNIOR-AGE-04",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 0, "gestational_age_weeks": 38},
+    "clauses": [
+      {"id": "JUNIOR-P13", "text": "Eligible for the main member and his/her dependents from birth (provided it is a term baby of 38 weeks) to 17 years.", "role": "supporting", "source_page": 13},
+      {"id": "JUNIOR-P4", "text": "Children are the most important little people in our lives... stand-alone cover for children aged 0 - 17 years", "role": "distractor", "source_page": 4}
+    ],
+    "question": "What is the minimum gestational age requirement for a newborn to be eligible from birth under J-Care Junior?",
+    "answer": "To be eligible from birth, a newborn must be a term baby born at 38 weeks [JUNIOR-P13]."
+  },
+  {
+    "id": "JUNIOR-AGE-05",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 0, "gestational_age_weeks": 35},
+    "clauses": [
+      {"id": "JUNIOR-P13", "text": "Eligible for the main member and his/her dependents from birth (provided it is a term baby of 38 weeks) to 17 years.", "role": "supporting", "source_page": 13},
+      {"id": "JUNIOR-P13", "text": "General waiting period of 30 days for new entrants on illness claims. No waiting period for accident-related treatment.", "role": "distractor", "source_page": 13}
+    ],
+    "question": "Can a premature baby born at 35 weeks be enrolled from birth according to the brochure?",
+    "answer": "No. The brochure states that entry from birth requires the baby to be a term baby of 38 weeks [JUNIOR-P13]."
+  },
+  {
+    "id": "JUNIOR-AGE-06",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 17},
+    "clauses": [
+      {"id": "JUNIOR-P4", "text": "stand-alone cover for children aged 0 - 17 years with great benefits that will cater to their health needs.", "role": "supporting", "source_page": 4},
+      {"id": "JUNIOR-P13", "text": "Eligible for the main member and his/her dependents from birth (provided it is a term baby of 38 weeks) to 17 years.", "role": "supporting", "source_page": 13},
+      {"id": "JUNIOR-P13", "text": "Premium will be based on the age of the applicant.", "role": "distractor", "source_page": 13}
+    ],
+    "question": "What is the upper age limit for a child covered under J-Care Junior?",
+    "answer": "The upper age limit listed in the brochure is 17 years of age [JUNIOR-P4, JUNIOR-P13]."
+  },
+  {
+    "id": "JUNIOR-AGE-07",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "JUNIOR-P13", "text": "Premium will be based on the age of the applicant.", "role": "supporting", "source_page": 13},
+      {"id": "JUNIOR-P13", "text": "All applications including Continuous transfer applications are subject to medical underwriting and acceptance.", "role": "distractor", "source_page": 13}
+    ],
+    "question": "Does age affect the premium pricing for J-Care Junior?",
+    "answer": "Yes. The brochure specifies that the premium is based on the age of the applicant [JUNIOR-P13]."
+  },
+  {
+    "id": "JUNIOR-AGE-08",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 7},
+    "clauses": [
+      {"id": "JUNIOR-P7", "text": "Lodger fees for parent accompanying sick child member: Covered for child under 10 years", "role": "supporting", "source_page": 7},
+      {"id": "JUNIOR-P7", "text": "Inpatient MRI/CT Scans and PET Scans (subject to pre authorisation): Covered", "role": "distractor", "source_page": 7}
+    ],
+    "question": "Up to what age is parent lodger accommodation covered when a child is hospitalized under J-Care Junior?",
+    "answer": "Parent lodger fees are covered for a parent accompanying a sick child member under 10 years of age [JUNIOR-P7]."
+  },
+  {
+    "id": "JUNIOR-AGE-09",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "age_eligibility",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {"child_age": 12},
+    "clauses": [
+      {"id": "JUNIOR-P7", "text": "Lodger fees for parent accompanying sick child member: Covered for child under 10 years", "role": "supporting", "source_page": 7},
+      {"id": "JUNIOR-P7", "text": "Bed Limits per day. NHIF rebate will be applied on the limits shown", "role": "distractor", "source_page": 7}
+    ],
+    "question": "Will J-Care Junior pay lodger fees for a parent staying with a 12-year-old child in hospital?",
+    "answer": "No. The brochure specifies that parent lodger fees are only covered for children under 10 years of age [JUNIOR-P7]."
+  },
+  {
+    "id": "JUNIOR-EXCL-06",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "JUNIOR-P14", "text": "Alternative treatment such as herbal, acupuncture treatment, chiropractors etc.", "role": "supporting", "source_page": 14},
+      {"id": "JUNIOR-P14", "text": "Beauty treatment or massage, stays in sanatoria, old age homes, places of rest etc.", "role": "distractor", "source_page": 14}
+    ],
+    "question": "Does J-Care Junior cover alternative treatments like acupuncture or chiropractic care?",
+    "answer": "No. The brochure lists alternative treatments, including acupuncture, herbal care, and chiropractic treatment, under general exclusions [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-07",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "JUNIOR-P14", "text": "Intentional self-injury while sane or insane, suicide or attempted suicide, treatment of acute or chronic alcoholism and drug addiction.", "role": "supporting", "source_page": 14},
+      {"id": "JUNIOR-P14", "text": "Treatment for consumption of alcohol, drugs, intoxication, dependency on or abuse of alcohol, drugs or any other substance abuse, complications, injury or illness arising directly or indirectly thereof.", "role": "supporting", "source_page": 14},
+      {"id": "JUNIOR-P14", "text": "Genetic disorders, genetic testing and related conditions.", "role": "distractor", "source_page": 14}
+    ],
+    "question": "Are treatments for drug addiction or alcohol dependency covered by J-Care Junior?",
+    "answer": "No. The brochure excludes treatment for alcoholism, drug addiction, intentional self-injury, and all illnesses or injuries arising from substance abuse [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-08",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "JUNIOR-P14", "text": "Treatment required because of non-compliance, failure or refusal to comply with medical advice.", "role": "supporting", "source_page": 14},
+      {"id": "JUNIOR-P14", "text": "Expenses recoverable under any other insurance such as NHIF, Workmen's Compensation, Personal Accident among others.", "role": "distractor", "source_page": 14}
+    ],
+    "question": "If a health condition worsens because medical advice was ignored, will J-Care Junior cover the treatment?",
+    "answer": "No. Expenses resulting from non-compliance or refusal to comply with medical advice are excluded [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-09",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "JUNIOR-P14", "text": "Expenses recoverable under any other insurance such as NHIF, Workmen's Compensation, Personal Accident among others.", "role": "supporting", "source_page": 14},
+      {"id": "JUNIOR-P13", "text": "All inpatient hospital bills shall be paid net of all National Hospital Insurance Fund (NHIF) rebates.", "role": "distractor", "source_page": 13}
+    ],
+    "question": "Does J-Care Junior cover medical expenses that can be recovered from another insurance scheme?",
+    "answer": "No. The brochure excludes expenses that are recoverable under another insurance cover, such as NHIF, Personal Accident, or Workmen's Compensation [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-10",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "JUNIOR-P14", "text": "Epidemics, pandemics, or unknown diseases except for COVID-19 up to the indicated limits.", "role": "supporting", "source_page": 14},
+      {"id": "JUNIOR-P6", "text": "COVID- 19 Coverage: Pre-existing and/or chronic conditions...", "role": "distractor", "source_page": 6}
+    ],
+    "question": "Are epidemic or pandemic diseases covered under J-Care Junior?",
+    "answer": "No. Epidemics, pandemics, and unknown diseases are excluded, except for COVID-19 up to specified plan limits [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-11",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "JUNIOR-P14", "text": "Navel, Military or air force operations, injury or illness resulting from insurrection, war, civil commotion or an act of terrorism, whether declared or undeclared or as a result of participation in riot and/or strikes.", "role": "supporting", "source_page": 14},
+      {"id": "JUNIOR-P14", "text": "Transportation other than a licensed ambulance, as provided for under the inpatient coverage of this contract.", "role": "distractor", "source_page": 14}
+    ],
+    "question": "Are injuries sustained during a public riot or strike covered by J-Care Junior?",
+    "answer": "No. Injuries or illnesses resulting from riots, strikes, war, acts of terrorism, or military operations are excluded [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-12",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "JUNIOR-P14", "text": "Beauty treatment or massage, stays in sanatoria, old age homes, places of rest etc.", "role": "supporting", "source_page": 14},
+      {"id": "JUNIOR-P14", "text": "Cosmetic or plastic surgery unless necessitated by an accidental injury that occurs while the insured is covered under this contract.", "role": "distractor", "source_page": 14}
+    ],
+    "question": "Are therapeutic massage treatments or stays in rest homes covered?",
+    "answer": "No. Beauty treatment, massages, and stays in places of rest, sanatoria, or old age homes are excluded [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-13",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "JUNIOR-P14", "text": "Transportation other than a licensed ambulance, as provided for under the inpatient coverage of this contract.", "role": "supporting", "source_page": 14},
+      {"id": "JUNIOR-P9", "text": "Medically necessary local road ambulance leading to admission in hospital: Covered", "role": "distractor", "source_page": 9}
+    ],
+    "question": "Will J-Care Junior reimburse private taxi transport to a hospital?",
+    "answer": "No. Transportation other than a licensed ambulance provided under inpatient cover is explicitly excluded [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-14",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "JUNIOR-P14", "text": "Peri-Menopause Menopause, andropause, hormone replacement therapy, age, and puberty related treatment.", "role": "supporting", "source_page": 14},
+      {"id": "JUNIOR-P14", "text": "Fertility treatment e.g. costs of treatment related to infertility and impotence...", "role": "distractor", "source_page": 14}
+    ],
+    "question": "Are puberty-related treatments covered under the J-Care Junior brochure?",
+    "answer": "No. The brochure lists puberty-related treatments, hormone replacement therapy, and menopause/andropause care under general exclusions [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-15",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "JUNIOR-P14", "text": "Fertility treatment e.g. costs of treatment related to infertility and impotence, any injury, illness or disease specified as an exclusion and complications caused by a condition that is excluded.", "role": "supporting", "source_page": 14},
+      {"id": "JUNIOR-P14", "text": "Genetic disorders, genetic testing and related conditions.", "role": "distractor", "source_page": 14}
+    ],
+    "question": "Does J-Care Junior cover complications resulting from an excluded medical condition?",
+    "answer": "No. The brochure states that complications caused by any excluded condition or disease are also excluded [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-16",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "not_stated",
+    "review_status": "draft_needs_human_review",
+    "answerable": false,
+    "memory": {},
+    "clauses": [],
+    "question": "Does J-Care Junior cover hearing aid replacement if stolen?",
+    "answer": "The provided policy information does not state whether replacement for stolen hearing aids is covered. Please check with the insurer."
+  },
+  {
+    "id": "JUNIOR-EXCL-17",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "not_stated",
+    "review_status": "draft_needs_human_review",
+    "answerable": false,
+    "memory": {},
+    "clauses": [],
+    "question": "Are routine school sports injuries subject to a co-payment in J-Care Junior?",
+    "answer": "The provided policy information does not state whether routine school sports injuries require a co-payment. Please check with the insurer."
+  },
+  {
+    "id": "JUNIOR-EXCL-18",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "JUNIOR-P14", "text": "Genetic disorders, genetic testing and related conditions.", "role": "supporting", "source_page": 14},
+      {"id": "JUNIOR-P14", "text": "Congenital defects or genetic conditions.", "role": "distractor", "source_page": 14}
+    ],
+    "question": "Is genetic testing covered under J-Care Junior?",
+    "answer": "No. Genetic disorders, genetic testing, and related conditions are general exclusions listed in the brochure [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-19",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "JUNIOR-P14", "text": "Cosmetic or plastic surgery unless necessitated by an accidental injury that occurs while the insured is covered under this contract.", "role": "supporting", "source_page": 14},
+      {"id": "JUNIOR-P14", "text": "Beauty treatment or massage, stays in sanatoria, old age homes, places of rest etc.", "role": "distractor", "source_page": 14}
+    ],
+    "question": "Is plastic surgery covered if it is required due to an accidental injury occurring while insured?",
+    "answer": "Yes. Cosmetic or plastic surgery is excluded unless it is necessitated by an accidental injury occurring while covered under the contract [JUNIOR-P14]."
+  },
+  {
+    "id": "JUNIOR-EXCL-20",
+    "policy_id": "JUBILEE-JCARE-JUNIOR-BROCHURE",
+    "source_file": "J-Care-Junior-Brochure.pdf",
+    "category": "not_stated",
+    "review_status": "draft_needs_human_review",
+    "answerable": false,
+    "memory": {},
+    "clauses": [],
+    "question": "Does J-Care Junior cover experimental organ transplant procedures?",
+    "answer": "The provided policy information does not state whether experimental organ transplant procedures are covered or excluded. Please check with the insurer."
+  }
+]

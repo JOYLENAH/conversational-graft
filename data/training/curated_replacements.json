@@ -1,0 +1,54 @@
+[
+  {
+    "id": "KIDO-EXCL-27",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {
+        "id": "PE3",
+        "text": "Experimental or unproven treatment unless the Company has given specific pre-authorization.",
+        "role": "supporting",
+        "source_page": 34
+      }
+    ],
+    "question": "Is experimental gene-editing therapy for sickle cell anemia covered?",
+    "answer": "The policy does not specifically mention gene-editing therapy for sickle cell anemia. It says experimental or unproven treatment is excluded unless the Company gives specific pre-authorization [PE3]."
+  },
+  {
+    "id": "KIDO-EXCL-32",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "exclusion",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {
+        "id": "PE3",
+        "text": "Experimental or unproven treatment unless the Company has given specific pre-authorization.",
+        "role": "supporting",
+        "source_page": 34
+      }
+    ],
+    "question": "Does the KIDO policy cover experimental stem cell therapy?",
+    "answer": "The policy does not specifically mention stem cell therapy. It says experimental or unproven treatment is excluded unless the Company gives specific pre-authorization [PE3]."
+  },
+  {
+    "id": "KIDO-AGE-24",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "not_stated",
+    "review_status": "draft_needs_human_review",
+    "answerable": false,
+    "memory": {
+      "child_age": 18
+    },
+    "clauses": [],
+    "question": "What exact date does dependent-child coverage end when a child reaches the maximum age?",
+    "answer": "The policy gives an age limit for dependent children but does not state the exact date their coverage ends. Please check with the insurer."
+  }
+]

@@ -1,0 +1,148 @@
+[
+  {
+    "id": "KIDO-ENT-01",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "entity_relationship",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "Clause 2.19", "text": "Dependent: means the Insured member's spouse, children, adopted children and stepchildren who are eligible for coverage according to the Eligibility conditions set forth in this Policy.", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.61", "text": "Insured member: means a subscriber of the KIDO or any member of a legally established organization or association (e.g. association, union and the like) who has fulfilled the Eligibility conditions and is named in the Policy schedule and on a Membership card.", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.40", "text": "KIDO: means the applicant for the insurance coverage, acting in the name of the Insured member and their dependents...", "role": "distractor", "source_page": null}
+    ],
+    "question": "What is the policy distinction between an Insured Member and a Dependent?",
+    "answer": "An Insured Member is a subscriber of KIDO who has met eligibility conditions and is named in the schedule [Clause 2.61]. A Dependent refers specifically to the Insured Member's eligible spouse, children, stepchildren, or adopted children [Clause 2.19]."
+  },
+  {
+    "id": "KIDO-ENT-02",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "entity_relationship",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "Clause 3.5(iii)", "text": "A Dependent eligible to participate as a Insured member under this Policy shall not be a dependent for the purpose of this Policy.", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.19", "text": "Dependent: means the Insured member's spouse, children, adopted children and stepchildren who are eligible for coverage according to the Eligibility conditions set forth in this Policy.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Can a person who is eligible to participate as an Insured Member also be covered as a Dependent?",
+    "answer": "No. The policy rules state that any person eligible to participate as an Insured Member cannot be considered a dependent under the policy [Clause 3.5(iii)]."
+  },
+  {
+    "id": "KIDO-ENT-03",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "entity_relationship",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "Clause 3.21(ii)(c)", "text": "Cover in respect of Insured members shall terminate immediately on the first of the following events: When the Insured member ceases to be a subscriber of KIDO (in such an event, the Insured's Dependents will also cease to be covered under this Policy);", "role": "supporting", "source_page": null},
+      {"id": "Clause 3.21(ii)(b)", "text": "When a Dependent cease to be the Spouse of the Insured member;", "role": "distractor", "source_page": null}
+    ],
+    "question": "What happens to a child's dependent coverage if the parent stops being a KIDO subscriber?",
+    "answer": "If an Insured Member ceases to be a KIDO subscriber, coverage for all of their Dependents terminates immediately [Clause 3.21(ii)(c)]."
+  },
+  {
+    "id": "KIDO-ENT-04",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "entity_relationship",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "Clause 1.3", "text": "The Insured member shall be the paid-up subscribers of the Kingdom Development Organ (hereinafter referred to as \"the subscribers or insured member\") under the Trustees of the Church of Uganda and their dependants.", "role": "supporting", "source_page": null},
+      {"id": "Clause 1.8 b(iii)", "text": "To pay the subscription fees of KIDO as per the requirements of the organ before joining this insurance scheme", "role": "supporting", "source_page": null},
+      {"id": "Clause 1.1", "text": "This Master Policy is a contract of insurance between Prudential Assurance Uganda Limited (hereinafter referred to as \"the Company or PAUL\") and THE REGISTERED TRUSTEES OF CHURCH OF UGANDA...", "role": "distractor", "source_page": null}
+    ],
+    "question": "Must a parent be a paid-up KIDO subscriber before enrolling their children?",
+    "answer": "Yes. Insured members must be paid-up subscribers of KIDO and pay KIDO subscription fees before joining the insurance scheme [Clause 1.3, Clause 1.8 b(iii)]."
+  },
+  {
+    "id": "KIDO-ENT-05",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "entity_relationship",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "Clause 1.5", "text": "Each insured life under this policy shall be issued a Membership card for their sole use. No other individual whether insured or not shall use another individual's membership card.", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.45", "text": "Membership card: means a personalized card issued by the Company in the name of each Insured member, identifying him as an Insured member...", "role": "distractor", "source_page": null}
+    ],
+    "question": "Can a parent use their own membership card to access treatment for their insured child?",
+    "answer": "No. Every insured life is issued a membership card for their sole use, and no individual may use another person's card [Clause 1.5]."
+  },
+  {
+    "id": "KIDO-ENT-06",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "entity_relationship",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "Clause 3.30", "text": "The Company and the KIDO are the only parties to this Policy. Insured members will have no right to enforce this Policy or any part of it.", "role": "supporting", "source_page": null},
+      {"id": "Clause 1.1", "text": "This Master Policy is a contract of insurance between Prudential Assurance Uganda Limited... and THE REGISTERED TRUSTEES OF CHURCH OF UGANDA implementing a Kingdom Development Organ - KIDO programme...", "role": "distractor", "source_page": null}
+    ],
+    "question": "Does an individual insured parent or child have legal rights to enforce the master policy contract?",
+    "answer": "No. Prudential and KIDO are the only contracting parties, and insured members have no right to enforce the policy [Clause 3.30]."
+  },
+  {
+    "id": "KIDO-ENT-07",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "entity_relationship",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "Clause 3.6(ii)", "text": "Dependents: Insured member's Dependents are eligible for coverage upon payment of premium by the insured member for the dependant. The Company may require an explanation and proof of dependency in cases where any already existing dependent is suggested for addition after Commencement date of the medical cover.", "role": "supporting", "source_page": null},
+      {"id": "Clause 3.6(i)", "text": "Insured member: means a subscribed member of KIDO who has fully paid their premium and incepted by the company.", "role": "distractor", "source_page": null}
+    ],
+    "question": "Can Prudential ask for proof of dependency when a parent adds a child after the policy commencement date?",
+    "answer": "Yes. Prudential may require an explanation and proof of dependency if an existing dependent is proposed for addition after the commencement date [Clause 3.6(ii)]."
+  },
+  {
+    "id": "KIDO-ENT-08",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "entity_relationship",
+    "review_status": "draft_needs_human_review",
+    "answerable": true,
+    "memory": {},
+    "clauses": [
+      {"id": "Clause 3.24(i)", "text": "In accordance with the terms of this Policy, the KIDO is liable for all Claims paid by the Company to the providers, for Insured members who use the Membership cards in a Fraudulent manner.", "role": "supporting", "source_page": null},
+      {"id": "Clause 2.31", "text": "Fraud: is an intentional Act of deception by any person which has the objective of obtaining a benefit or causing loss...", "role": "distractor", "source_page": null}
+    ],
+    "question": "Who is liable to Prudential if a member fraudulently uses a membership card for a non-covered person?",
+    "answer": "KIDO is liable to Prudential for all claims paid to providers resulting from fraudulent card use by insured members [Clause 3.24(i)]."
+  },
+  {
+    "id": "KIDO-ENT-09",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "not_stated",
+    "review_status": "draft_needs_human_review",
+    "answerable": false,
+    "memory": {},
+    "clauses": [],
+    "question": "Can a legal guardian who is not a biological parent be designated as the principal member for a child?",
+    "answer": "The provided policy information does not state whether a non-parent legal guardian can be enrolled as a principal member. Please check with the insurer."
+  },
+  {
+    "id": "KIDO-ENT-10",
+    "policy_id": "PRU/MED/041206/2023",
+    "source_file": "KIDO-MASTER-POLICY-231220-for-website.pdf",
+    "category": "not_stated",
+    "review_status": "draft_needs_human_review",
+    "answerable": false,
+    "memory": {},
+    "clauses": [],
+    "question": "Can foster children who are not legally adopted be added as dependents?",
+    "answer": "The provided policy information does not state whether foster children without legal adoption qualify as dependents. Please check with the insurer."
+  }
+]
