@@ -61,21 +61,42 @@ class PolicyGraph:
     def _nodes(self, kind: str):
         return [(n, d) for n, d in self.g.nodes(data=True) if d.get("kind") == kind]
 
-    def eligibility(self, age: Optional[int], is_student: Optional[bool] = None) -> Optional[Fact]:
-        """Which age rule applies to a child of this age, and are they eligible?"""
+    def eligibility(
+        self, age: Optional[int], is_student: Optional[bool] = None, detail: bool = True
+    ) -> Optional[Fact]:
+        """Which age rule applies to a child of this age, and are they eligible?
+
+        detail=True spells out the rule's conditions; detail=False gives a short
+        reminder for answers that are mainly about something else (e.g. dental cover).
+        """
         if age is None:
             return None
-        for _, r in self._nodes("age_rule"):
+        # This is a child health plan, so only the rules about children decide eligibility.
+        # Rules for principal members and spouses (entry age 70, senior tier) must not
+        # apply to a child, otherwise a 26-year-old child would match the adult band.
+        rules = [r for _, r in self._nodes("age_rule")]
+        rules = [r for r in rules if "child" in r["text"].lower()] or rules
+        for r in rules:
             if r["min_age"] <= age <= r["max_age"]:
                 needs_student = "student" in r["text"].lower()
-                if needs_student and not is_student:
+                if not detail:
+                    summary = f"At age {age} the child may be eligible under the age rule."
+                elif needs_student and not is_student:
                     summary = (
-                        f"At age {age} a dependent is only eligible if a full-time student "
-                        "and financially dependent."
+                        f"At age {age} the child is only eligible if they are a full-time student. {r['text']}"
                     )
+                elif needs_student:
+                    summary = f"At age {age} the child may be eligible as a full-time student. {r['text']}"
                 else:
-                    summary = f"At age {age} the child falls within an eligible age band."
+                    summary = f"At age {age} the child may be eligible. {r['text']}"
                 return Fact("eligibility", summary, r["clause_id"], r["text"])
+        oldest = max(rules, key=lambda r: r["max_age"])
+        if age > oldest["max_age"]:
+            summary = (
+                f"At age {age} the child is above the maximum age of {oldest['max_age']} for dependent "
+                "children, so they are not eligible as a dependent under this policy."
+            )
+            return Fact("eligibility", summary, oldest["clause_id"], oldest["text"])
         return Fact(
             "eligibility",
             f"Age {age} is outside the eligible age bands in this policy.",

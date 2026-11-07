@@ -1,0 +1,82 @@
+{
+  "status": "draft_curation_decisions_for_human_review",
+  "excluded_record_count": 19,
+  "excluded_records": [
+    {
+      "id": "KIDO-AGE-08",
+      "reason": "Near-duplicate of the pilot's over-18 full-time student eligibility example."
+    },
+    {
+      "id": "KIDO-AGE-10",
+      "reason": "Near-duplicate of the pilot's premature-birth eligibility boundary example."
+    },
+    {
+      "id": "KIDO-AGE-14",
+      "reason": "Lodger-fee benefit question, outside the age/eligibility, exclusion, and entity scope."
+    },
+    {
+      "id": "KIDO-AGE-15",
+      "reason": "Lodger-fee benefit question, outside the age/eligibility, exclusion, and entity scope."
+    },
+    {
+      "id": "KIDO-AGE-16",
+      "reason": "Lodger-fee benefit question, outside the age/eligibility, exclusion, and entity scope."
+    },
+    {
+      "id": "KIDO-AGE-17",
+      "reason": "Senior Citizens dental-benefit question, outside the child age/eligibility, exclusion, and entity scope."
+    },
+    {
+      "id": "KIDO-AGE-18",
+      "reason": "Senior Citizens dental-benefit question, outside the child age/eligibility, exclusion, and entity scope."
+    },
+    {
+      "id": "KIDO-AGE-19",
+      "reason": "Vaccination benefit question, outside the age/eligibility, exclusion, and entity scope."
+    },
+    {
+      "id": "KIDO-AGE-23",
+      "reason": "Ongoing benefit after policy deletion, outside the agreed knowledge-layer scope."
+    },
+    {
+      "id": "KIDO-ENT-06",
+      "reason": "Master-policy enforcement rights are outside the child/dependent entity distinctions in scope."
+    },
+    {
+      "id": "KIDO-ENT-08",
+      "reason": "Fraud liability is outside the child/dependent entity distinctions in scope."
+    },
+    {
+      "id": "JUNIOR-AGE-04",
+      "reason": "Near-duplicate of the pilot's J-Care Junior newborn-at-38-weeks example."
+    },
+    {
+      "id": "JUNIOR-AGE-06",
+      "reason": "Near-duplicate of the pilot's J-Care Junior 0-17 age-range example."
+    },
+    {
+      "id": "JUNIOR-AGE-07",
+      "reason": "Premium-pricing question, outside the age/eligibility, exclusion, and entity scope."
+    },
+    {
+      "id": "JUNIOR-AGE-08",
+      "reason": "Lodger-fee benefit question, outside the age/eligibility, exclusion, and entity scope."
+    },
+    {
+      "id": "JUNIOR-AGE-09",
+      "reason": "Lodger-fee benefit question, outside the age/eligibility, exclusion, and entity scope."
+    },
+    {
+      "id": "JUNIOR-EXCL-18",
+      "reason": "Near-duplicate of the pilot's J-Care Junior genetic-exclusion example."
+    },
+    {
+      "id": "JUNIOR-EXCL-19",
+      "reason": "Near-duplicate of the pilot's J-Care Junior accident-related cosmetic surgery example."
+    },
+    {
+      "id": "JUNIOR-EXCL-17",
+      "reason": "Co-payment question is outside the agreed scope and lacks the provider details needed to determine whether the stated co-payment applies."
+    }
+  ]
+}

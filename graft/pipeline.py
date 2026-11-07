@@ -12,11 +12,24 @@ from typing import Optional
 
 from .graph import Fact, PolicyGraph
 from .llm import LLM, RuleBasedLLM, build_prompt
-from .memory import MemoryTracker
+from .memory import MemoryTracker, mentions_facts
 from .metrics import constraint_retention, faithfulness
 from .retrieval import ClauseIndex
 
-ELIGIBILITY_WORDS = re.compile(r"\b(eligible|eligibility|cover|covered|join|enrol|enroll|add|qualify|old)\b", re.I)
+# "Can she be covered?", "Is my son eligible?" -> a question about the child, not about a benefit.
+ELIGIBILITY_QUESTION = re.compile(
+    r"\b(eligible|eligibility|qualify|qualifies|join|enrol|enroll|add|added|dependent)\b"
+    r"|\b(he|she|they|him|her|them|child|son|daughter|kid)\b[^?.!]*\b(covered|insured|cover)\b",
+    re.I,
+)
+# Words that appear in almost every insurance question. They are removed before the fallback
+# clause search, otherwise "Is acupuncture covered?" would match any clause containing "covered".
+GENERIC_WORDS = re.compile(
+    r"\b(cover|covers|covered|coverage|policy|insurance|include|included|includes|insured)\b", re.I
+)
+# When no benefit or age rule matched, a clause is used as the answer only if it is at least
+# this similar to the topic words in the question. Otherwise the system says it could not find it.
+FALLBACK_MIN_SCORE = 0.1
 FOLLOW_UP = re.compile(r"\b(waiting|wait|exclu|excluded|limit)\w*", re.I)
 DEFAULT_POLICY = Path(__file__).resolve().parent.parent / "data" / "sample_policy.json"
 
@@ -50,8 +63,12 @@ class GraftPipeline:
             last = state.benefits_discussed[-1]
             benefits = [b for b in self.graph.match_benefits(last)]
 
-        if state.age is not None and not wants:
-            elig = self.graph.eligibility(state.age, state.is_student)
+        # The age rule is relevant when the user is asking about the child, has just told us
+        # about the child, or is asking about a benefit (then a short reminder is added).
+        # It is not added to unrelated questions such as "Is acupuncture covered?".
+        asks_eligibility = bool(ELIGIBILITY_QUESTION.search(message))
+        if state.age is not None and not wants and (benefits or asks_eligibility or mentions_facts(message)):
+            elig = self.graph.eligibility(state.age, state.is_student, detail=not benefits)
             if elig:
                 facts.append(elig)
         for b in benefits:
@@ -66,8 +83,10 @@ class GraftPipeline:
         fact_clause_ids = {f.clause_id for f in facts if f.clause_id}
         citations = sorted(fact_clause_ids)
         if not facts and not wants:
-            citations = [c.clause_id for c in clauses[:2]]
-            facts = [Fact("clause", c.text, c.clause_id, c.text) for c in clauses[:2]] if state.age is not None else []
+            topic = GENERIC_WORDS.sub(" ", message)
+            strong = self.index.search(topic, k=2, min_score=FALLBACK_MIN_SCORE)
+            citations = [c.clause_id for c in strong]
+            facts = [Fact("clause", c.text, c.clause_id, c.text) for c in strong]
 
         summaries = [f.summary for f in facts]
         prompt = build_prompt(message, state.to_dict(), summaries, [(c.clause_id, c.text) for c in clauses])
@@ -82,7 +101,10 @@ class GraftPipeline:
         # Evidence for the UI: clauses the answer cites, then clauses retrieval
         # returned that the answer did not use (the "distractors" the model must ignore).
         faith = faithfulness(answer, evidence)
-        retention = constraint_retention(answer, state.to_dict())
+        # Retention is only scored when the remembered age was supposed to shape this answer.
+        # A waiting-period or "not found" reply has nothing to retain, so it shows "Not applicable".
+        age_matters = any(f.kind == "eligibility" for f in facts)
+        retention = constraint_retention(answer, state.to_dict()) if age_matters else None
         evidence_items = [
             {"clause_id": cid, "text": self.clause_text.get(cid, ""), "used": True} for cid in citations
         ]

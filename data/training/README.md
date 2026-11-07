@@ -41,3 +41,10 @@ applies the three saved replacements, adds source/citation namespace metadata,
 and flags known scope or duplicate-review candidates. It does not approve,
 fact-check, or split the records, and it does not load them into the chatbot.
 The combined draft needs human review before training or evaluation.
+
+Run `python data/training/curate_scoped_dataset.py` to create
+`curated_training_candidate_v1.json` and `curation_exclusions.json`. The
+candidate keeps 80 scope-focused records and leaves excluded examples listed
+with reasons in the audit file. It is still a draft: review source accuracy,
+scope flags, and possible paraphrase overlap before making a train/evaluation
+split or training a model.

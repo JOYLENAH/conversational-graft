@@ -22,6 +22,18 @@ DEPENDENT_PATTERN = re.compile(
 )
 
 
+def mentions_facts(message: str) -> bool:
+    """True when the message itself tells us something about the child (age, student, dependent)."""
+    return bool(
+        MONTH_PATTERN.search(message)
+        or any(p.search(message) for p in AGE_PATTERNS)
+        or NEWBORN_PATTERN.search(message)
+        or STUDENT_PATTERN.search(message)
+        or DEPENDENT_PATTERN.search(message)
+        or re.search(r"\bdependent", message, re.I)
+    )
+
+
 @dataclass
 class SessionState:
     age: Optional[int] = None
